@@ -1,0 +1,102 @@
+.main-header {
+    position: relative;
+    height: 700px;
+    @include flexbox;
+    @include flex-align(flex-start, center);
+    
+    .main-header-holder {
+
+        .header-description {
+            color: $secondary-color;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: $secondary-font;
+            font-weight: 700;
+        }
+
+        h1 {
+            color: #1e2528;
+            font-size: 50px;
+        }
+
+        .main-header-content {
+            color: $secondary-text-color;
+        }
+
+        .buttons-panel {
+            margin-top: 40px;
+
+            .reserve {
+                display: inline-block;
+                padding: 14px 20px;
+                color: #fff;
+                background-color: $primary-color;
+
+                &:hover {
+                    background-color: $button-color;
+                }
+            }
+
+            .watch {
+                display: inline-block;
+                margin-left: 15px;
+                color: $secondary-color;
+                
+                i {
+                    height: 40px;
+                    width: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    border: 1px solid $secondary-color;
+                    border-radius: 50%;
+                    transition: all .3s;
+                }
+            }
+        }
+    }
+
+    .header-flowers {
+        position: absolute;
+        left: 0;
+        top: 35%;
+        max-width: 8%;
+        z-index: -1;
+    }
+
+    .header-bg {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 30%; 
+        z-index: 6;   
+    }
+
+    @media all and (min-width: $extra-large) {
+
+            .header-bg {
+                max-width: 40%;
+            }
+    }
+
+    @media all and (min-width: $large) {
+            .main-header-holder {
+                width: 60%;
+            }
+
+            .header-bg {
+                display: block;
+            }
+    }
+
+    @media all and (max-width: $extra-small) {
+       
+        .main-header-holder { 
+            .buttons-panel {
+                .watch {
+                    margin: 10px 0 0 0;
+                }
+            }
+        }
+    }
+}
