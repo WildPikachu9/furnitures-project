@@ -6,11 +6,15 @@
 @import 'base/global';
 @import 'base/normalize';
 
+@import 'layout/grid';
 @import 'layout/menu';
 @import 'layout/header';
 @import 'layout/about';
+@import 'layout/services';
+
 
 @import 'components/buttons';
+@import 'components/infoboxes';
 
 
 

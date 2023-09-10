@@ -1,7 +1,7 @@
 
 @mixin flexbox {
     display: flex;
-    flex-direction: wrap;
+    flex-wrap: wrap;
 }
 
 @mixin flex-align($justify, $align){
