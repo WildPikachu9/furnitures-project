@@ -17,6 +17,22 @@
             box-shadow: 0 5px 20px #f0f0f0;
         }
 
+        .meta {
+            margin-top: 25px;
+            font-size: 12px;
+            text-transform: uppercase;
+
+            .category {
+                margin-right: 5px;
+                color: inherit;
+            }
+
+            .post-date {
+                margin-left: 5px;
+                color: inherit;
+            }
+        }
+
         img {
             width: 100%;
         }

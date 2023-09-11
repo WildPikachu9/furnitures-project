@@ -8,3 +8,19 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin menu-list {
+    background-color: #fff;
+
+        .menu-item {
+            display: inline-block;
+            margin: 0 20px;
+            font-size: initial;
+
+            a {
+                color: $secondary-color;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }    
+}
