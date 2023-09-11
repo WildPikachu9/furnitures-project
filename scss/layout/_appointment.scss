@@ -15,6 +15,21 @@
         width: 100%;
         background-color: $primary-color;
         text-align: center;
+
+        .appointment-message {
+            width: 100%;
+            display: none;
+
+            &.error {
+                display: block;
+                color: #f00;
+            }
+
+            &.send {
+                display: block;
+                color: #fff;
+            }
+        }
     }
 
     @media all and (min-width: $large) {

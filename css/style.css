@@ -585,6 +585,18 @@ input[type=checkbox], input[type=radio] {
   background-color: #1ba4ce;
   text-align: center;
 }
+.appointment form .appointment-message {
+  width: 100%;
+  display: none;
+}
+.appointment form .appointment-message.error {
+  display: block;
+  color: #f00;
+}
+.appointment form .appointment-message.send {
+  display: block;
+  color: #fff;
+}
 @media all and (min-width: 922px) {
   .appointment .desctop-bgc {
     display: block;
