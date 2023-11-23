@@ -1,100 +1,59 @@
-.main-header {
-    position: relative;
-    height: 700px;
-    @include flexbox;
-    @include flex-align(flex-start, center);
-    
-    .main-header-holder {
+.header {
+    margin: 20px 0;
+    width: 100%;
 
-        .header-description {
-            color: $secondary-color;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-family: $secondary-font;
-            font-weight: 700;
-        }
-
-        h1 {
-            color: #1e2528;
-            font-size: 50px;
-        }
-
-        .main-header-content {
-            color: $secondary-text-color;
-        }
-
-        .buttons-panel {
-            margin-top: 40px;
-
-            .reserve {
-                display: inline-block;
-                padding: 14px 20px;
-                color: #fff;
-                background-color: $primary-color;
-
-                &:hover {
-                    background-color: $button-color;
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                .d-block {
+                    height: 400px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                 }
             }
-
-            .watch {
-                display: inline-block;
-                margin-left: 15px;
-                color: $secondary-color;
-                
+            .angles-down {
+                display: none;
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 10;
                 i {
-                    height: 40px;
-                    width: 40px;
-                    text-align: center;
-                    line-height: 40px;
-                    border: 1px solid $secondary-color;
-                    border-radius: 50%;
+                    color: #fff;
+                    font-size: $baseline + 10px;
                     transition: all .3s;
+                    
+                    &:hover {
+                        color: $button-color;
+                    }
                 }
             }
         }
     }
 
-    .header-flowers {
-        position: absolute;
-        left: 0;
-        top: 35%;
-        max-width: 8%;
-        z-index: -1;
+    @media all and (min-width: $medium) {
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    .d-block {
+                        height: 600px;
+                    }
+                }
+                .angles-down {
+                    display: block;
+                }
+            }
+        }
     }
-
-    .header-bg {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        max-width: 30%; 
-        z-index: 6;   
-    }
-
+    
     @media all and (min-width: $extra-large) {
-
-            .header-bg {
-                max-width: 40%;
-            }
-    }
-
-    @media all and (min-width: $large) {
-            .main-header-holder {
-                width: 60%;
-            }
-
-            .header-bg {
-                display: block;
-            }
-    }
-
-    @media all and (max-width: $extra-small) {
-       
-        .main-header-holder { 
-            .buttons-panel {
-                .watch {
-                    margin: 10px 0 0 0;
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    .d-block {
+                        height: 700px;
+                    }
                 }
             }
         }

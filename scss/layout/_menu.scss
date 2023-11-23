@@ -1,99 +1,139 @@
-.main-nav {
-    position: fixed;
-    top: 0;
+.navbar {
+    padding: 20px 0;
     width: 100%;
-    z-index: 5;
     background-color: #fff;
 
-    .main-nav-holder {
+    .container-fluid {
         @include flexbox;
         justify-content: space-between;
 
         .brand {
             display: inline-block;
-            height: 50px;
     
             img {
-                height: 100%;
-            }
-        }
-
-        %mobile-controls {
-            font-size: 28px;
-            line-height: 50px;
-            cursor: pointer;
-        }
-
-        .mobile-hamburger {
-            @extend %mobile-controls;
-            color: $primary-color;
-        }
-    
-        .open-menu-holder {
-            display: none;
-            position: fixed;
-            top: 0;
-            right: 0;
-            padding: 12px 23px;
-            max-width: 480px;
-            width: 480px;
-            background-color: $primary-color;
-            text-align: right;
-
-            &.open {
-                display: block;
-            }
-
-            .mobile-close {
-                @extend %mobile-controls;
-                color: #fff;
-                text-align: right;
                 height: 50px;
             }
 
-            .menu {
-                list-style: none;
+            @media all and (min-width: $extra-small) {
+                img {
+                    height: 70px;
+                }
+            }
+        }
 
-                .menu-item {
-                    padding: 20px 0;
-                    text-transform: uppercase;
-                    font-size: 50px;
+        .navbar-toggler {
+            border: 1px solid $button-color;
+            border-radius: 0;
 
-                    a {
-                        color: #fff;
+            &:focus {
+                box-shadow: none;
+                background-color: #ddd;
+            }
+
+            i {
+                color: $button-color;
+            }
+        }
+
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
+                    text-align: center;
+                    
+                    .nav-link {
+                        color: $secondary-text-color;
+                        transition: all 0.3s;
+    
+                        &:hover {
+                            color: $button-color; 
+                        }
+                    }
+                    .active {
+                        color: $button-color; 
+                    }
+
+                    .dropdown-menu {
+                        border-radius: 0;
+                        background-color: $secondary-color;
+                        text-align: center;
+                        
+
+                        .dropdown-item {
+                            color: #fff;
+
+                            &:hover {
+                                background-color: $primary-color;
+                            }
+                        }
                     }
                 }
             }
         }
     }
+}
 
-    @media all and (min-width: $large) {
-
-        %mobile-controls {
-            display: none;
-
-        }
-
-        .main-nav-holder {
-
-            justify-content: flex-start;
+@media all and (min-width: $medium) {
+    .navbar {
+        .container-fluid {
+            @include flex-align(center, center);
+            flex-wrap: wrap;
+            text-align: center;
 
             .brand {
-                padding-top: 10px;
-                height: 75px;
+                img {
+                    height: 100%;
+                }
             }
+            .navbar-collapse {
+                flex-grow: 0;
+                .navbar-nav {
+                   
+                    .nav-item {
+                        @include flexbox;
+                        @include flex-align(center, center);
 
-            .open-menu-holder {
-                display: block;
-                position: static;
-                padding: 0;
-                background-color: transparent;
-                width: auto;
-                max-width: 100%;
-                align-self: flex-start;
-                
-                .menu {
-                    @include menu-list;
+                        &:not(:last-of-type)::after {
+                            content: "|";
+                            display: inline-block;
+                            color: rgba(106,106,106,1);
+                            margin-right: 2px;
+                            margin-left: 2px;
+                        }
+
+                        .nav-link {
+                            padding: 0 15px;
+                            font-size: 15px;
+                        }
+
+                        .dropdown-menu {
+                            text-align: start;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: $large) {
+    .navbar {
+        .container-fluid {
+            @include flex-align(space-between, center);
+            flex-wrap: nowrap;
+            padding: 0 50px;
+        }
+    }
+}
+@media all and (min-width: $extra-large) {
+    .navbar {
+        .container-fluid {
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            font-size: 20px;
+                        }
+                    }
                 }
             }
         }

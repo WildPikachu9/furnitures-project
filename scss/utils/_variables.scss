@@ -1,16 +1,15 @@
 // fonts
-
-$primary-font: 'Roboto', sans-serif;
-$secondary-font: 'Bellota', cursive;
+$primary-font: 'Lato', sans-serif;
+$secondary-font: 'Lato', sans-serif;
 
 // colors
 
-$primary-color: #1ba4ce;
-$secondary-color: #473452;
-$button-color: #30383b;
+$primary-color:  rgba(248,249,250,1);
+$secondary-color:  #6a6a6a;
+$button-color: rgba(36,164,197,1);
 
-$primary-text-color: #888;
-$secondary-text-color: #555;
+$primary-text-color: rgba(63,63,63,1);
+$secondary-text-color: rgba(106,106,106,1);
 
 $primary-box-shadow:  0 5px 20px #f0f0f0;
 
@@ -29,5 +28,5 @@ $extra-large-container: 1140px;
 $extra-small: 480px;
 $small: 576px;
 $medium: 768px;
-$large: 922px;
+$large: 992px;
 $extra-large: 1200px;

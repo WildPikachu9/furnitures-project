@@ -1,16 +1,18 @@
 %btn {
     display: inline-block;
     padding: 15px 35px;
-    border-radius: 30px;
     border: 0;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: $button-color;
 }
 
 .btn-primary {
     @extend %btn;
-    background-color: $primary-color;
+    background-color: transparent;
+    transition: all .4s;
 
     &:hover {
         background-color: $button-color;

@@ -4,13 +4,14 @@
 
 body {
     font-family: $primary-font;
-    color: $primary-text-color
+    color: $primary-text-color;
+    background-color: $primary-color;
 }
 
 .container {
     max-width: $small-container;
     width: $small-container;
-    padding: 0 23px;
+    padding: 50px 30px;
     margin: 0 auto;
 }
 

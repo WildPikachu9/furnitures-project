@@ -1,23 +1,45 @@
 .about {
     text-align: center;
 
-    .about-header {
+    .container {
+        @include flexbox;
+        max-width: 95%;
+        box-shadow: $primary-box-shadow;
+        background-color: #fff;
 
-        img {
-            max-width: 100px;
-        }
+        .about-header {
+            max-width: 100%;
+            text-align: start;
+            img {
+                max-width: 200px;
+            }
+            .offers-hr {
+                display: block;
+                width: 40%;
+                height: 3px;
+                color: $button-color;
+                opacity: 1;
+            }
         
-        .about-header-description {
-            margin-bottom: 0;
-            color: $secondary-color;
-            text-transform: uppercase;
-            letter-spacing: 2px ;
+            .about-content {
+                margin: 0 auto 26px auto;
+                font-weight: 300;
+                max-width: 850px;
+            }
         }
-    }
+        .container-image {
+            display: none;
+        }
 
-    .about-content {
-        margin: 0 auto 26px auto;
-        font-weight: 300;
-        max-width: 850px;
+        @media all and (min-width: $extra-large) {
+            .about-header {
+                max-width: 50%;
+            }
+            .container-image {
+                display: inline-block;
+                max-height: 350px;
+                max-width: 50%;
+            }
+        }
     }
 }
