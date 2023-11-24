@@ -1,15 +1,76 @@
 .page-footer {
-    padding: 30px 0;
     text-align: center;
+    .footer-top {
+        @include flexbox;
+        flex-direction: column;
+        padding: 30px;
+        background-color: #fff;
+        .footer-nav {
+            .nav-link {
+                padding: .2rem 1rem;
+                color: $secondary-text-color;
+                transition: all 0.3s;
 
-    img {
-        width: 100px;
+                &:hover {
+                    color: $button-color; 
+                }
+            }
+            .active {
+                color: $button-color; 
+            }
+        }
+        .text-container {
+            padding: 10px 0;
+            p {
+                margin: 0;
+            }
+        }
+        .logo-footer {
+            img {
+                width: 200px;
+            }
+        }
     }
 
-    .footer-nav {
-        .menu {
-            @include menu-list;
-            padding: 20px 0;
+    .footer-bottom {
+        padding: 20px 0;
+        background-color: #000;
+        color: $primary-color;
+    }
+
+    .footer-font-size {
+        font-size: 13px;
+    }
+
+    .link-footer {
+        margin: 0 5px;
+        color: $button-color;
+        &:hover {
+            text-decoration: underline; 
+        }
+    }
+
+    @media all and (min-width: $medium) {
+        .footer-top {
+            flex-direction: row;
+            @include flex-align(space-around, center);
+            text-align: start;
+        }
+    }
+    @media all and (min-width: $large) {
+        .footer-top {
+            padding: 10px;
+            .logo-footer {
+                img {
+                    width: 300px;
+                }
+            }
+        }
+        .footer-bottom {
+            padding: 10px 0;
+        }
+        .footer-font-size {
+            font-size: $baseline;
         }
     }
 }

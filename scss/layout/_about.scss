@@ -3,16 +3,22 @@
 
     .container {
         @include flexbox;
+        padding: 30px;
         max-width: 95%;
         box-shadow: $primary-box-shadow;
         background-color: #fff;
 
         .about-header {
-            max-width: 100%;
+            max-width: 95%;
             text-align: start;
             img {
                 max-width: 200px;
             }
+
+            h2 {
+                font-size: $baseline + 4px;
+            }
+
             .offers-hr {
                 display: block;
                 width: 40%;
@@ -31,6 +37,13 @@
             display: none;
         }
 
+        @media all and (min-width: $large) {
+            .about-header {
+                h2 {
+                    font-size: $baseline + 10px;
+                }
+            }
+        }
         @media all and (min-width: $extra-large) {
             .about-header {
                 max-width: 50%;
