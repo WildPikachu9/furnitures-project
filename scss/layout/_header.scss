@@ -1,5 +1,5 @@
 .header {
-    margin: 20px 0;
+    margin-bottom: 20px;
     width: 100%;
 
     .carousel {
@@ -57,5 +57,48 @@
                 }
             }
         }
+    }
+}
+
+.common-header {
+    .header-image {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        .breadcrumb-container {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 20px 25px;
+            background-color: rgba(61,61,61,.8);
+            .breadcrumb {
+                margin-bottom: 0;
+                font-size: $baseline + 2px;
+                letter-spacing: .5px;
+                .available-link a {
+                    color: rgba(38,211,255,1);
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                .active, .breadcrumb-item::before {
+                    color: #fff;
+                }
+            }
+            @media all and (min-width: $medium) {
+                padding-left: 100px;
+                padding-right: 50px;
+                .breadcrumb {
+                    font-size: $baseline + 6px;
+                }
+            }
+            
+            @media all and (min-width: $extra-large) {
+                padding-left: 200px;
+            }
+        }
+        
     }
 }

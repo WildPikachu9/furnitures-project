@@ -309,31 +309,6 @@ input[type=checkbox], input[type=radio] {
   padding: 0;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col {
-  width: 100%;
-}
-
-@media all and (min-width: 768px) {
-  .col-md-50p {
-    width: 50%;
-  }
-  .col-md-33p {
-    width: 33.33%;
-  }
-  .col-md-66p {
-    width: 66.66%;
-  }
-}
-@media all and (min-width: 992px) {
-  .col-lg-25p {
-    width: 25%;
-  }
-}
 .navbar {
   padding: 20px 0;
   width: 100%;
@@ -439,7 +414,7 @@ input[type=checkbox], input[type=radio] {
   }
 }
 .header {
-  margin: 20px 0;
+  margin-bottom: 20px;
   width: 100%;
 }
 .header .carousel .carousel-inner .carousel-item .d-block {
@@ -475,6 +450,49 @@ input[type=checkbox], input[type=radio] {
 @media all and (min-width: 1200px) {
   .header .carousel .carousel-inner .carousel-item .d-block {
     height: 700px;
+  }
+}
+
+.common-header .header-image {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+.common-header .header-image .breadcrumb-container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px 25px;
+  background-color: rgba(61, 61, 61, 0.8);
+}
+.common-header .header-image .breadcrumb-container .breadcrumb {
+  margin-bottom: 0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+.common-header .header-image .breadcrumb-container .breadcrumb .available-link a {
+  color: rgb(38, 211, 255);
+}
+.common-header .header-image .breadcrumb-container .breadcrumb .available-link a:hover {
+  text-decoration: underline;
+}
+.common-header .header-image .breadcrumb-container .breadcrumb .active, .common-header .header-image .breadcrumb-container .breadcrumb .breadcrumb-item::before {
+  color: #fff;
+}
+@media all and (min-width: 768px) {
+  .common-header .header-image .breadcrumb-container {
+    padding-left: 100px;
+    padding-right: 50px;
+  }
+  .common-header .header-image .breadcrumb-container .breadcrumb {
+    font-size: 22px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .common-header .header-image .breadcrumb-container {
+    padding-left: 200px;
   }
 }
 
@@ -585,43 +603,96 @@ input[type=checkbox], input[type=radio] {
     max-width: 80%;
   }
 }
-.services .service {
-  position: relative;
-  height: 340px;
+.services .container .text-offer h2 {
+  font-size: 24px;
 }
-.services .service img {
+.services .container .text-offer .offers-hr {
+  display: block;
+  width: 40%;
+  height: 3px;
+  color: rgb(36, 164, 197);
+  opacity: 1;
+}
+.services .container .text-offer p {
+  font-size: 16px;
+}
+.services .container .text-offer .offers-list {
+  list-style-type: square;
+  color: rgb(36, 164, 197);
+}
+.services .container .text-offer .offers-list .offer-item a {
+  color: rgb(63, 63, 63);
+}
+.services .container .text-offer .offers-list .offer-item a:hover {
+  color: rgb(36, 164, 197);
+}
+.services .container .row {
+  flex-direction: column;
+  --bs-gutter-x: 0;
+}
+.services .container .row .service {
+  position: relative;
+  margin: 10px 0;
+  height: 340px;
+  width: 100%;
+}
+.services .container .row .service img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.services .service .service-overlay {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background-color: rgba(27, 164, 206, 0.8);
+.services .container .row .service .service-overlay {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(36, 164, 197, 0.8);
   opacity: 0;
   transition: all 0.3s;
 }
-.services .service .service-overlay:hover {
+.services .container .row .service .service-overlay:hover {
   opacity: 1;
 }
-.services .service .service-overlay img {
+.services .container .row .service .service-overlay img {
   width: 60px;
   height: auto;
 }
-.services .service .service-overlay h3 {
+.services .container .row .service .service-overlay h3 {
   color: #fff;
 }
 @media all and (min-width: 768px) {
-  .services .service {
-    height: 400px;
+  .services .container .text-offer h2 {
+    font-size: 30px;
+  }
+  .services .container .row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .services .container .row .service {
+    max-width: 48%;
+    flex-basis: 48%;
+  }
+}
+@media all and (min-width: 1200px) {
+  .services .container {
+    max-width: 85%;
+  }
+  .services .container .text-offer h2 {
+    font-size: 32px;
+  }
+  .services .container .text-offer p, .services .container .text-offer .offers-list a {
+    font-size: 18px;
+  }
+  .services .container .row .service {
+    max-width: 32%;
+    flex-basis: 32%;
   }
 }
 

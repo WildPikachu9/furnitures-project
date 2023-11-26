@@ -1,46 +1,103 @@
 .services {
-
-    .service {
-        position: relative;
-        height: 340px;
-
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .service-overlay {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            background-color: rgba(27, 164, 206, 0.8);
-            @include flexbox;
-            @include flex-align(center, center);
-            flex-direction: column;
-            opacity: 0;
-            transition: all .3s;
-
-            &:hover {
+    .container {
+        .text-offer {
+            h2 {
+                font-size: $baseline + 8px;
+            }
+            .offers-hr {
+                display: block;
+                width: 40%;
+                height: 3px;
+                color: $button-color;
                 opacity: 1;
             }
-
-            img {
-                width: 60px;
-                height: auto;
+            p {
+                font-size: $baseline;
             }
-
-            h3 {
-                color: #fff;
+            .offers-list {
+                list-style-type: square;
+                color: $button-color;
+                .offer-item a{
+                    color: $primary-text-color;
+                    &:hover {
+                        color: $button-color;
+                    }
+                }
             }
         }
-    }
-
-    @media all and (min-width: $medium) {
-        .service {
-            height: 400px;
+        .row {
+            flex-direction: column;
+            --bs-gutter-x: 0;
+            .service {
+                position: relative;
+                margin: 10px 0;
+                height: 340px;
+                width: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+        
+                .service-overlay {
+                    @include flexbox;
+                    @include flex-align(center, center);
+                    flex-direction: column;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    background-color: rgba(36,164,197, 0.8);
+                    opacity: 0;
+                    transition: all .3s;
+        
+                    &:hover {
+                        opacity: 1;
+                    }
+        
+                    img {
+                        width: 60px;
+                        height: auto;
+                    }
+        
+                    h3 {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        @media all and (min-width: $medium) {
+            .text-offer {
+                h2 {
+                    font-size: $baseline + 14px;
+                }
+            }
+            .row {
+                flex-direction: row;
+                @include flex-align(space-between, center);
+                .service {
+                    max-width: 48%;
+                    flex-basis: 48%;
+                }
+            }
+        }
+        @media all and (min-width: $extra-large) {
+            max-width: 85%;
+            .text-offer {
+                h2 {
+                    font-size: $baseline + 16px;
+                }
+                p, .offers-list a  {
+                    font-size: $baseline + 2px;
+                }
+            }
+            .row {
+                .service {
+                    max-width: 32%;
+                    flex-basis: 32%;
+                }
+            }
         }
     }
 }
