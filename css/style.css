@@ -441,15 +441,15 @@ input[type=checkbox], input[type=radio] {
 }
 @media all and (min-width: 768px) {
   .header .carousel .carousel-inner .carousel-item .d-block {
-    height: 600px;
+    height: 550px;
   }
   .header .carousel .carousel-inner .angles-down {
     display: block;
   }
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1600px) {
   .header .carousel .carousel-inner .carousel-item .d-block {
-    height: 700px;
+    height: 650px;
   }
 }
 
@@ -696,8 +696,27 @@ input[type=checkbox], input[type=radio] {
   }
 }
 
-.team {
-  padding-bottom: 200px;
+.about-us .container .text-offer .container-image {
+  max-width: 100%;
+}
+.about-us .container .text-offer .container-image img {
+  width: 100%;
+}
+@media all and (min-width: 992px) {
+  .about-us .container {
+    padding: 0;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+  .about-us .container .text-offer {
+    margin: 0 50px;
+  }
+  .about-us .container .text-offer .info-container {
+    max-width: 54%;
+  }
+  .about-us .container .text-offer .container-image {
+    max-width: 44%;
+  }
 }
 
 .appointment {

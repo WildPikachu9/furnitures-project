@@ -1,0 +1,27 @@
+.about-us {
+    .container {
+        .text-offer {
+            .container-image {
+                max-width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        
+        @media all and (min-width: $large) {
+            padding: 0;
+            max-width: 100%;
+            justify-content: space-between;
+            .text-offer {
+                margin: 0 50px;
+                .info-container {
+                    max-width: 54%;
+                }
+                .container-image {
+                    max-width: 44%;
+                }
+            }
+        }
+    }  
+}

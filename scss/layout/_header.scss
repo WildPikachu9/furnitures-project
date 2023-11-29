@@ -37,7 +37,7 @@
             .carousel-inner {
                 .carousel-item {
                     .d-block {
-                        height: 600px;
+                        height: 550px;
                     }
                 }
                 .angles-down {
@@ -47,12 +47,12 @@
         }
     }
     
-    @media all and (min-width: $extra-large) {
+    @media all and (min-width: 1600px) {
         .carousel {
             .carousel-inner {
                 .carousel-item {
                     .d-block {
-                        height: 700px;
+                        height: 650px;
                     }
                 }
             }
