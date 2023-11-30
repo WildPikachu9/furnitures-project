@@ -45,16 +45,26 @@ section {
   padding: 30px 0;
 }
 section .section-header {
-  text-align: center;
   margin-bottom: 40px;
 }
-section .section-header p {
-  margin: auto;
-  font-weight: 300;
+section .section-header h2 {
+  font-size: 24px;
+}
+section .section-header .offers-hr {
+  display: block;
+  width: 40%;
+  height: 3px;
+  color: rgb(36, 164, 197);
+  opacity: 1;
 }
 @media all and (min-width: 992px) {
-  section .section-header p {
-    max-width: 70%;
+  section .section-header h2 {
+    font-size: 30px;
+  }
+}
+@media all and (min-width: 1200px) {
+  section .section-header h2 {
+    font-size: 32px;
   }
 }
 
@@ -719,108 +729,58 @@ input[type=checkbox], input[type=radio] {
   }
 }
 
-.appointment {
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-.appointment .desctop-bgc {
-  display: none;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 40%;
-}
-.appointment form {
-  padding: 80px 40px;
-  width: 100%;
-  background-color: rgb(248, 249, 250);
-  text-align: center;
-}
-.appointment form .appointment-message {
-  width: 100%;
-  display: none;
-}
-.appointment form .appointment-message.error {
-  display: block;
-  color: #f00;
-}
-.appointment form .appointment-message.send {
-  display: block;
-  color: #fff;
-}
-@media all and (min-width: 992px) {
-  .appointment .desctop-bgc {
-    display: block;
-  }
-  .appointment form {
-    padding: 80px;
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .appointment form input,
-  .appointment form select {
-    width: 49%;
-  }
-  .appointment form textarea {
-    margin: 60px 0;
-  }
-}
-
 .contact {
-  margin-top: 100px;
-  color: #fff;
-  background-color: rgb(248, 249, 250);
+  padding: 0 20px;
 }
-.contact .section-header {
-  color: #fff;
+.contact .container .row {
+  flex-direction: column;
 }
-.contact .section-header h2 {
-  color: #fff;
-}
-.contact .contact-data {
-  padding: 25px 0;
+.contact .container .row .contact-data {
   margin-bottom: 30px;
 }
-.contact .contact-data .contact-item {
+.contact .container .row .contact-data .contact-item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  text-transform: uppercase;
 }
-.contact .contact-data .contact-item .img-holder {
+.contact .container .row .contact-data .contact-item .img-holder {
   margin-right: 10px;
   width: 15%;
-  text-align: center;
+  color: rgb(36, 164, 197);
 }
-.contact .contact-data .contact-item .img-holder img {
-  width: 30px;
+.contact .container .row .contact-data .contact-item .img-holder i {
+  font-size: 25px;
 }
-.contact .contact-data .contact-item a {
-  color: #fff;
+.contact .container .row .contact-data .contact-item .col h3 {
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-.contact .contact-data .contact-item a:hover {
-  text-decoration: underline;
+.contact .container .row .contact-data .contact-item .col p {
+  font-size: 16px;
 }
-@media all and (min-width: 768px) {
-  .contact .contact-data .contact-item {
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
-.contact .contact-form {
+.contact .container .row .contact-form {
   padding: 25px 0;
 }
-.contact .contact-form form {
+.contact .container .row .btn-container {
   text-align: center;
 }
-@media all and (min-width: 768px) {
-  .contact .contact-form form {
-    text-align: start;
+@media all and (min-width: 992px) {
+  .contact .container .row {
+    flex-direction: row;
   }
+  .contact .container .row .contact-data,
+  .contact .container .row .contact-form {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+}
+.contact a {
+  color: rgb(36, 164, 197);
+}
+.contact a:hover {
+  text-decoration: underline;
 }
 
 .page-footer {
@@ -891,40 +851,36 @@ input[type=checkbox], input[type=radio] {
   }
 }
 
-.btn-form, .btn-secondary, .btn-primary {
+.btn-secondary, .btn-primary {
   display: inline-block;
   padding: 15px 35px;
   border: 0;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
-  font-weight: 500;
-  color: rgb(36, 164, 197);
+  font-weight: 600;
 }
 
 .btn-primary {
+  border-bottom: 1px solid rgb(36, 164, 197);
+  color: rgb(36, 164, 197);
   background-color: transparent;
   transition: all 0.4s;
 }
 .btn-primary:hover {
   background-color: rgb(36, 164, 197);
+  border-bottom: 1px solid transparent;
 }
 
 .btn-secondary {
+  border: 1px solid transparent;
+  color: rgb(248, 249, 250);
   background-color: rgb(36, 164, 197);
 }
 .btn-secondary:hover {
+  border: 1px solid rgb(36, 164, 197);
+  color: rgb(36, 164, 197);
   background-color: rgb(248, 249, 250);
-}
-
-.btn-form {
-  color: #6a6a6a;
-  background-color: #fff;
-  font-weight: 700;
-}
-.btn-form:hover {
-  color: #fff;
-  background-color: rgb(36, 164, 197);
 }
 
 .infobox-team, .infobox {
@@ -1009,45 +965,48 @@ input[type=checkbox], input[type=radio] {
   color: #fff;
 }
 
-input,
-textarea,
-select {
+.form-control {
   display: inline-block;
   padding: 15px;
   margin-bottom: 15px;
   width: 100%;
   border: 0;
-  border-bottom: 1px solid #fff;
-  color: #fff;
+  border-bottom: 1px solid rgb(36, 164, 197);
+  border-radius: 0;
+  color: rgb(36, 164, 197);
   background-color: rgb(248, 249, 250);
   text-transform: uppercase;
 }
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder,
-select::-webkit-input-placeholder {
-  color: #fff;
+.form-control:focus-visible {
+  border-color: rgb(36, 164, 197);
 }
-input::-moz-placeholder,
-textarea::-moz-placeholder,
-select::-moz-placeholder {
-  color: #fff;
+.form-control::-webkit-input-placeholder {
+  color: rgb(36, 164, 197);
 }
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder,
-select:-ms-input-placeholder {
-  color: #fff;
+.form-control::-moz-placeholder {
+  color: rgb(36, 164, 197);
 }
-input:-moz-placeholder,
-textarea:-moz-placeholder,
-select:-moz-placeholder {
-  color: #fff;
+.form-control:-ms-input-placeholder {
+  color: rgb(36, 164, 197);
 }
-input.error,
-textarea.error,
-select.error {
+.form-control:-moz-placeholder {
+  color: rgb(36, 164, 197);
+}
+.form-control.error {
   border-bottom: 1px solid #f00;
 }
 
 textarea {
   height: 100px;
+}
+
+.form-check .form-check-input:checked {
+  background-color: rgb(36, 164, 197);
+  border-color: rgb(36, 164, 197);
+}
+.form-check .form-check-input:checked:focus-visible {
+  border-color: rgb(36, 164, 197);
+}
+.form-check .form-check-label {
+  font-size: 11px;
 }/*# sourceMappingURL=style.css.map */

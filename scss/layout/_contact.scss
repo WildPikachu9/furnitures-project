@@ -1,62 +1,60 @@
 .contact {
-    margin-top: 100px;
-    color: #fff;
-    background-color: $primary-color;
+    padding: 0 20px;
+    .container {
+        .row {
+            flex-direction: column;
 
-    .section-header {
-        color: #fff;
+            .contact-data {
+                margin-bottom: 30px;
+        
+                .contact-item {
+                    @include flexbox;
+                    @include flex-align(center, center);
+                    
+        
+                    .img-holder {
+                        margin-right: 10px;
+                        width: 15%;
+                        color: $button-color;
+        
+                        i {
+                            font-size: 25px;
+                        }
+                    }
+                    .col {
+                        h3 {
+                            color: #000;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                        }
+                        p {
+                            font-size: $baseline;
+                        }
+                    }
+                }
+            }
+            .contact-form {
+                padding: 25px 0;
+            }
 
-        h2 {
-            color: #fff;
-        }
-    }
-
-    .contact-data {
-        padding: 25px 0;
-        margin-bottom: 30px;
-
-        .contact-item {
-            @include flexbox;
-            @include flex-align(center, center);
-            text-transform: uppercase;
-
-            .img-holder {
-                margin-right: 10px;
-                width: 15%;
+            .btn-container {
                 text-align: center;
-
-                img {
-                    width: 30px;
-                }
             }
-
-            a {
-                color: #fff;
-
-                &:hover {
-                    text-decoration: underline;
+            
+            @media all and (min-width: $large) {
+                flex-direction: row;
+                .contact-data, 
+                .contact-form {
+                    max-width: 50%;
+                    flex-basis: 50%;
                 }
-            }
-        }
-
-        @media all and (min-width: $medium) {
-            .contact-item {
-                @include flex-align(flex-start, center);
             }
         }
     }
-
-    .contact-form {
-        padding: 25px 0;
-
-        form {
-            text-align: center;
-        }
-
-        @media all and (min-width: $medium) {
-            form {
-                text-align: start;
-            }
+    a {
+        color: $button-color;
+        &:hover {
+            text-decoration: underline;
         }
     }
 }

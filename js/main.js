@@ -32,8 +32,8 @@ const createAppointment = (appointment) => {
         document.getElementById('appointment-date').value = '';
         document.getElementById('appointment-time').value = '';
         document.getElementById('appointment-message').value = '';    
-    })
-}
+    });
+};
 
 document.getElementById('appointment-form').addEventListener('submit', function(e){
     e.preventDefault();

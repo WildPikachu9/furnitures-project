@@ -43,17 +43,28 @@ section {
     padding: 30px 0;
 
     .section-header {
-        text-align: center;
         margin-bottom: 40px;
 
-        p {
-            margin: auto;
-            font-weight: 300;
+        h2 {
+            font-size: $baseline + 8px;
+        }
+
+        .offers-hr {
+            display: block;
+            width: 40%;
+            height: 3px;
+            color: $button-color;
+            opacity: 1;
         }
 
         @media all and (min-width: $large) {
-            p {
-                max-width: 70%;
+            h2 {
+                font-size: $baseline + 14px;
+            } 
+        }
+        @media all and (min-width: $extra-large) {
+            h2 {
+                font-size: $baseline + 16px;
             }
         }
     }

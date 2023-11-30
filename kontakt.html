@@ -59,42 +59,105 @@
     <section id="contact" class="contact">
         <div class="container">
             <header class="section-header">
-                <h2>Get in touch</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam rem deserunt quo laborum iste quas qui nobis dolorum reprehenderit.</p>
+                <h2>Kontakt z producentem mebli na wymiar BEL-MEB</h2>
+                <hr class="offers-hr"/>
+                <p>Wszystkich zainteresowanych naszą ofertą zapraszamy do kontaktu. Chętnie odpowiemy na nurtujące pytania i rozwiejemy wszelkie wątpliwości.</p>
             </header>
             <div class="row">
                 <div class="contact-data col col-md-33p">
                     <div class="contact-item">
                         <span class="img-holder">
-                            <img src="img/icons/icon-map.png" alt="map">
+                            <i class="fa fa-phone"></i>
                         </span>
-                        <p>848 E 28th ST, BROOKLYN <br> NEW YORK, USA</p>
+                        <div class="col">
+                            <h3>zadzwoń</h3>
+                            <p>
+                                <a href="tel:+48602321810" class="contact-data-link">602 321 810</a><br>
+                                <a href="tel:+48575408007" class="contact-data-link">575 408 007</a>
+                            </p>
+                        </div>
                     </div>
                     <div class="contact-item">
                         <span class="img-holder">
-                            <img src="img/icons/icon-mail.png" alt="e-mail">
+                            <i class="fa fa-envelope"></i>
                         </span>
-                        <p>
-                            <a href="mailto:example11@gmail.com">example11@gmail.com</a><br>
-                            <a href="mailto:example22@gmail.com">example22@gmail.com</a>
-                        </p>
+                        <div class="col">
+                            <h3>napisz</h3>
+                            <p><a href="mailto:info@bel-meb.pl">info@bel-meb.pl</a></p>
+                        </div>
                     </div>
                     <div class="contact-item">
                         <span class="img-holder">
-                            <img src="img/icons/icon-tel.png" alt="phone">
+                            <i class="fa fa-facebook"></i>
                         </span>
-                        <p>
-                            <span>+48 555 888 666</span><br>
-                            <span>+48 555 888 222</span>
-                        </p>
+                        <div class="col">
+                            <h3>obserwuj</h3>
+                            <p><a href="https://www.facebook.com/belmebpl">Meble na wymiar | BEL-MEB</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="img-holder">
+                            <i class="fa fa-map-location-dot"></i>
+                        </span>
+                        <div class="col">
+                            <h3>adres</h3>
+                            <p>
+                                <a href="https://www.google.com/maps/place/Bel-Meb/@50.0324372,20.0042246,17z/data=!3m1!4b1!4m6!3m5!1s0x471645cbe3d6db23:0xf784cffe8bcbd97b!8m2!3d50.0324338!4d20.0067995!16s%2Fg%2F11nfm9zqdb?authuser=0&entry=ttu" class="contact-data-link">Kobierzyńska 54<br>30-732 Kraków</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="img-holder">
+                            <i class="fa fa-clock"></i>
+                        </span>
+                        <div class="col">
+                            <h3>godziny otwarcia</h3>
+                            <p>Pon. - Pt. 9:00 - 18:00</p>
+                            <p>Sob. 10:00 - 14:00</p>
+                        </div>
                     </div>
                 </div>
                 <div class="contact-form col col-md-66p">
-                    <form action="">
-                        <input type="text" name="name" placeholder="first name">
-                        <input type="email" name="email" placeholder="email address">
-                        <textarea name="" id="" placeholder="write comment"></textarea>
-                        <button class="btn-form">submit now</button>
+                    <form action="/php/send-form.php" method="post" class="row g-3 needs-validation" novalidate>
+                        <div class="invalid-feedback">
+                            Proszę poprawnie wypełnić wszystkie wymagane pola.
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" id="validationCustom01" name="name" placeholder="imię / nazwa" required>
+                          <div class="invalid-feedback">
+                            To pole jest wymagane.
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <input type="email" class="form-control" id="validationCustom02" name="email" placeholder="E-mail" required>
+                          <div class="invalid-feedback">To pole jest wymagane.</div>
+                        </div>
+                        <div class="col-md-6">
+                          <input type="tel" class="form-control" id="validationCustom03" name="phone-nr" placeholder="numer telefonu" required>
+                          <div class="invalid-feedback">To pole jest wymagane.</div>
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" id="validationCustom04" name="theme" placeholder="temat">
+                        </div>
+                        <div class="col-md-6">
+                            <textarea class="form-control" id="validationTextarea" name="message" placeholder="wiadomość" required></textarea>
+                            <div class="invalid-feedback">To pole jest wymagane.</div>
+                          </div>
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Zapoznałem się z <a href="#">Polityką prywatności</a> serwisu <a href="/">www.bel-meb.pl</a> oraz wyrażam zgodę na przetwarzanie przez TOMASZ RÓG F.H.U BEL-MEB, Nowosądecka 31/84 30-683 Kraków, udostępnionych przeze mnie danych osobowych na zasadach opisanych w <a href="#">Polityce prywatności</a> dostępnej w Serwisie. Oświadczam, że są mi znane cele przetwarzania danych oraz moje uprawnienia. Niniejsza zgoda może być wycofana w dowolnym czasie poprzez kontakt z Administratorem pod adresem <a href="mailto:info@bel-meb.pl">info@bel-meb.pl</a>, bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem.
+                                Więcej informacji dotyczących przetwarzania danych osobowych - <a href="#">Obowiązek Informacyjny</a>.
+                             </label>                             
+                            <div class="invalid-feedback">
+                                To pole jest wymagane.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 btn-container">
+                            <button class="btn-secondary" type="submit" name="submit">wyślij wiadomość &#8594;</button>
+                        </div>
                     </form>
                 </div>
             </div>
