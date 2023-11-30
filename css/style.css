@@ -975,7 +975,6 @@ input[type=checkbox], input[type=radio] {
   border-radius: 0;
   color: rgb(36, 164, 197);
   background-color: rgb(248, 249, 250);
-  text-transform: uppercase;
 }
 .form-control:focus-visible {
   border-color: rgb(36, 164, 197);

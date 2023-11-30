@@ -6,13 +6,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $theme = htmlspecialchars($_POST["theme"]);
     $message = htmlspecialchars($_POST["message"]);
 
-    // $to = "jasmin.huk@gmail.com";
-    // $subject = "Nowa wiadomość od $name";
-    // $contact = "Proszę o kontakt za numerem $phone";
-    // $headers = "Od: ".$email;
+    $to = "jasmin.huk@gmail.com";
+    $contact = "Proszę o kontakt za numerem $phone";
+    $headers = "Od: ".$email;
 
-    // mail($to, $subject, $message, "From: $email\r\n" . "Reply-To: $email\r\n" . $contact);
-    
     if (empty($name)){
         exit();
         header("Location: ../kontakt.html");
@@ -27,14 +24,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: ../kontakt.html");
     }
 
-    echo "Dziękujemy za wysłanie wiadomości!";
-    echo "<br>";
-    echo $name;
-    echo "<br>";
-    echo $email;
+    mail($to, $message, "From: $email\r\n" . "Reply-To: $email\r\n" . $contact);
     header("Location: ../kontakt.html");
 } else {
-    // echo "Błąd przetwarzania formularza.";
     header("Location: ../kontakt.html");
 }
 ?>
