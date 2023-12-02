@@ -28,10 +28,30 @@
     &:-moz-placeholder {
         color: $button-color;
     }
+}
 
-    &.error {
-        border-bottom: 1px solid #f00;
-    }
+.form-control.is-valid, 
+.was-validated .form-control:valid,
+.was-validated .form-control:valid:focus {
+    border-color:  $button-color;
+}
+
+.was-validated .form-control:valid:focus,
+.was-validated .form-check.form-check-input:focus:checked {
+    box-shadow: $input-box-shadow;
+}
+
+.form-check-input.is-valid:checked, 
+.was-validated .form-check-input:valid:checked {
+    background-color: $button-color;
+    box-shadow: $input-box-shadow;
+}
+
+.form-check-input.is-valid~.form-check-label,
+.was-validated .form-check-input:valid~.form-check-label,
+.form-check-input.is-invalid~.form-check-label, 
+.was-validated .form-check-input:invalid~.form-check-label {
+    color: $primary-text-color;
 }
 
 textarea {
