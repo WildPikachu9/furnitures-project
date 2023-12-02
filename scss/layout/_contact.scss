@@ -35,11 +35,15 @@
             }
             .contact-form {
                 padding: 25px 0;
+                form.row {
+                    align-items: center;
+                    .btn-container {
+                        text-align: center;
+                    }
+                }
             }
 
-            .btn-container {
-                text-align: center;
-            }
+            
             
             @media all and (min-width: $large) {
                 flex-direction: row;

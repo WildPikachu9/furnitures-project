@@ -19,16 +19,13 @@
 
   //maps
 
-  // function initMap() {
-  //   var myLatLng = { lat: 50.032426879808945, lng: 20.006829736497163 };
-  //   var map = new google.maps.Map(document.getElementById('map'), {
-  //     zoom: 8,
-  //     center: myLatLng
-  //   });
+let map = L.map('map').setView([50.032426879808945, 20.006829736497163], 13);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap contributors'
+}).addTo(map);
 
-  //   var marker = new google.maps.Marker({
-  //     position: myLatLng,
-  //     map: map,
-  //     title: 'Moja lokalizacja!'
-  //   });
-  // }
+let marker1 = L.marker([50.032426879808945, 20.006829736497163]).addTo(map);
+marker1.bindPopup("<b>BEL-MEB</b><br>Biskupińska 22, Kraków").openPopup();
+
+let marker2 = L.marker([50.03123220536397, 19.920573971164476]).addTo(map);
+marker2.bindPopup("<b>BEL-MEB</b><br>Kobierzyńska 54, Kraków").openPopup();
