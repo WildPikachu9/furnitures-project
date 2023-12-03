@@ -4,7 +4,6 @@
     .container {
         @include flexbox;
         padding: 30px;
-        max-width: 95%;
         box-shadow: $primary-box-shadow;
         background-color: #fff;
 

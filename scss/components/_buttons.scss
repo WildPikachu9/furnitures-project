@@ -33,3 +33,13 @@
         background-color: $primary-color;
     }
 }
+.btn-panel {
+    @extend %btn;
+    border: 1px solid transparent;
+    color: $button-color;
+    background-color: $primary-color;
+    &:hover {
+        color: $primary-color;
+        background-color: $button-color;
+    }
+}

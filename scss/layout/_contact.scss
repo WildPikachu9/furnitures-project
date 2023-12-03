@@ -1,5 +1,4 @@
 .contact {
-    padding: 0 20px;
     .container {
         .row {
             flex-direction: column;
@@ -11,7 +10,6 @@
                     @include flexbox;
                     @include flex-align(center, center);
                     
-        
                     .img-holder {
                         margin-right: 10px;
                         width: 15%;
@@ -42,8 +40,6 @@
                     }
                 }
             }
-
-            
             
             @media all and (min-width: $large) {
                 flex-direction: row;

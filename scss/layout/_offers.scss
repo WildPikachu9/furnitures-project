@@ -1,6 +1,5 @@
 .offers {
     .container {
-        max-width: 95%;
         .offers-container {
             margin: 40px 0;
             background-color: #fff;
@@ -61,17 +60,6 @@
                 &:nth-of-type(even) .offers-item {
                     left: 0;
                 }
-            }
-        }
-    }
-}
-
-@media all and (min-width: $extra-large) {
-    .offers {
-        .container {
-            .offers-container {
-                margin: 25px auto;
-                max-width: 80%;
             }
         }
     }
