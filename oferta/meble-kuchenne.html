@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-zoom.min.css" integrity="sha512-vIrTyLijDDcUJrQGs1jduUCSVa3+A2DaWpVfNyj4lmXkqURVQJ8LL62nebC388QV3P4yFBSt/ViDX8LRW0U6uw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css" integrity="sha512-GRxDpj/bx6/I4y6h2LE5rbGaqRcbTu4dYhaTewlS8Nh9hm/akYprvOTZD7GR+FRCALiKfe8u1gjvWEEGEtoR6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <nav id="nav" class="navbar navbar-expand-md bg-body-tertiary">
         <div class="container-fluid">
             <a href="#" class="brand"><img src="https://bel-meb.pl/wp-content/uploads/2016/12/logo_belmeb-300x100.png" alt="logo-txt"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,15 +24,15 @@
                 <hr />
                 <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./index.html">STRONA GŁÓWNA</a>
+                    <a class="nav-link" aria-current="page" href="../">STRONA GŁÓWNA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./o-nas.html">O NAS</a>
+                    <a class="nav-link" href="../o-nas.html">O NAS</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/oferta.html" role="button" aria-expanded="false">OFERTA</a>
+                    <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="../oferta.html" role="button" aria-expanded="false">OFERTA</a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./oferta/meble-kuchenne.html">Meble kuchenne</a></li>
+                    <li><a class="dropdown-item active" href="#">Meble kuchenne</a></li>
                     <li><a class="dropdown-item" href="#">Zabudowy skosów / poddaszy</a></li>
                     <li><a class="dropdown-item" href="#">Zabudowa przedpokoju</a></li>
                     <li><a class="dropdown-item" href="#">Szafy / garderoby</a></li>
@@ -41,22 +41,26 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="./galeria.html">GALERIA</a>
+                    <a class="nav-link" href="../galeria.html">GALERIA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./kontakt.html">KONTAKT</a>
+                    <a class="nav-link" href="../kontakt.html">KONTAKT</a>
                 </li>
                 </ul>
             </div>
         </div>
+        <div class="arrow-up-container">
+            <a class="arrow-up hash" href="#nav"><i class="fa fa-angles-up"></i></a>
+        </div>
     </nav>
 
     <header class="header common-header">
-        <div class="header-image d-block w-100" style="background-image: url(./img/wood-591631_1280.jpg);">
+        <div class="header-image d-block w-100" style="background-image: url(../img/wood-591631_1280.jpg);">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcrumb-container">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item available-link"><a href="./">Strona główna</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Galeria</li>
+                  <li class="breadcrumb-item available-link"><a href="../index.html">Strona główna</a></li>
+                  <li class="breadcrumb-item available-link"><a href="../oferta.html">Oferta</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Meble kuchenne</li>
                 </ol>
             </nav>
         </div>
@@ -65,54 +69,38 @@
     <section id="gallery" class="gallery-container">
         <div class="container">
             <header class="section-header">
-                <h2>Galeria naszych realizacji</h2>
+                <h2>Meble kuchenne na wymiar</h2>
                 <hr class="offers-hr">
-                <p>Zapraszamy do obejrzenia naszej galerii, gdzie prezentujemy zdjęcia naszych wykonanych mebli na zamówienie. To miejsce, gdzie możecie Państwo zobaczyć efekty naszej pracy i sprawdzić, jak tworzymy meble zgodnie z życzeniami naszych Klientów. Meble te wyróżniają się funkcjonalnością i solidnym wykonaniem.</p>
+                <p>Kuchnia to jedno z trudniejszych do urządzenia miejsc w domu. Codziennie spędzamy tam dużo czasu gotując, rozmawiając i relaksując się z rodziną. Dlatego ważne jest, aby była praktyczna, wygodna i dobrze urządzona. Kuchnie na wymiar są świetnym rozwiązaniem, ponieważ pozwalają dostosować meble do naszych własnych potrzeb i pomysłów.</p>
+                <h2>Zalety mebli kuchennych na wymiar:</h2>
+                <ul class="offers-list">
+                    <li class="offer-item">Funkcjonalność i wygoda użytkowania.</li>
+                    <li class="offer-item">Elastyczność rozmieszczenia mebli dla lepszego wykorzystania przestrzeni.</li>
+                    <li class="offer-item">Precyzyjne dopasowanie do charakterystyki wnętrza.</li>
+                    <li class="offer-item">Wykonanie z wysokiej jakości materiałów, gwarantujące trwałość i estetykę.</li>
+                    <li class="offer-item">Indywidualny cennik zależny od projektu, oferujący konkurencyjne ceny.</li>
+                    <li class="offer-item">Profesjonalna obsługa, możliwość negocjacji i długa gwarancja na produkty.</li>
+                </ul>
+                <p>Meble kuchenne na wymiar to lepsze rozwiązanie niż gotowe modele, gwarantujące spełnienie oczekiwań klienta. Zapraszamy do zapoznania się z naszymi realizacjami i skorzystania z naszej oferty, obejmującej różnorodne meble na wymiar produkowane w Małopolsce.</p>
             </header>
-            <div class="buttons-panel">
-                <button class="btn-panel" onclick="filterGallery('all')">Wszystko</button>
-                <button class="btn-panel" onclick="filterGallery('kuchenne')">Meble kuchenne</button>
-                <button class="btn-panel" onclick="filterGallery('lazienkowe')">Meble łazienkowe</button>
-                <button class="btn-panel" onclick="filterGallery('szafy')">Szafy wnękowe</button>
-                <button class="btn-panel" onclick="filterGallery('biurowe')">Meble biurowe</button>
-                <button class="btn-panel" onclick="filterGallery('na-wymiar')">Meble na wymiar</button>
-            </div>
             <div id="lightgallery" class="gallery">
-                <a href="img/bed-1839184_1280.jpg" data-lg-size="1600-2400" class="szafy">
-                    <img alt="img1" src="img/bed-1839184_1280.jpg" />
+                <a href="../img/bed-1839184_1280.jpg" data-lg-size="1600-2400">
+                    <img alt="Meble kuchenne na wymiar" src="../img/bed-1839184_1280.jpg" />
                 </a>
-                <a href="img/kitchen-2165756_1280.jpg" data-lg-size="1024-800" class="kuchenne">
-                    <img alt="img2" src="img/kitchen-2165756_1280.jpg" />
+                <a href="../img/kitchen-2165756_1280.jpg" data-lg-size="1024-800">
+                    <img alt="Meble kuchenne na wymiar" src="../img/kitchen-2165756_1280.jpg" />
                 </a>
-                <a href="img/furniture-998265_1280.jpg" data-lg-size="1600-2400" class="lazienkowe">
-                    <img alt="img1" src="img/furniture-998265_1280.jpg" />
+                <a href="../img/furniture-998265_1280.jpg" data-lg-size="1600-2400">
+                    <img alt="Meble kuchenne na wymiar" src="../img/furniture-998265_1280.jpg" />
                 </a>
-                <a href="img/kitchen-2165756_1280.jpg" data-lg-size="1024-800" class="kuchenne">
-                    <img alt="img2" src="img/kitchen-2165756_1280.jpg" />
+                <a href="../img/kitchen-2165756_1280.jpg" data-lg-size="1024-800">
+                    <img alt="Meble kuchenne na wymiar" src="../img/kitchen-2165756_1280.jpg" />
                 </a>
-                <a href="img/bed-1839184_1280.jpg" data-lg-size="1600-2400" class="szafy">
-                    <img alt="img1" src="img/bed-1839184_1280.jpg" />
+                <a href="../img/bed-1839184_1280.jpg" data-lg-size="1600-2400">
+                    <img alt="Meble kuchenne na wymiar" src="../img/bed-1839184_1280.jpg" />
                 </a>
-                <a href="img/kitchen-2165756_1280.jpg" data-lg-size="1024-800" class="kuchenne">
-                    <img alt="img2" src="img/kitchen-2165756_1280.jpg" />
-                </a>
-                <a href="img/furniture-998265_1280.jpg" data-lg-size="1600-2400" class="biurowe">
-                    <img alt="img1" src="img/furniture-998265_1280.jpg" />
-                </a>
-                <a href="img/furniture-998265_1280.jpg" data-lg-size="1024-800" class="biurowe">
-                    <img alt="img2" src="img/furniture-998265_1280.jpg" />
-                </a>
-                <a href="img/bed-1839184_1280.jpg" data-lg-size="1600-2400" class="szafy">
-                    <img alt="img1" src="img/bed-1839184_1280.jpg" />
-                </a>
-                <a href="img/kitchen-2165756_1280.jpg" data-lg-size="1024-800" class="kuchenne">
-                    <img alt="img2" src="img/kitchen-2165756_1280.jpg" />
-                </a>
-                <a href="img/furniture-998265_1280.jpg" data-lg-size="1024-800" class="biurowe">
-                    <img alt="img2" src="img/furniture-998265_1280.jpg" />
-                </a>
-                <a href="img/bed-1839184_1280.jpg" data-lg-size="1600-2400" class="szafy">
-                    <img alt="img1" src="img/bed-1839184_1280.jpg" />
+                <a href="../img/kitchen-2165756_1280.jpg" data-lg-size="1024-800">
+                    <img alt="Meble kuchenne na wymiar" src="../img/kitchen-2165756_1280.jpg" />
                 </a>
             </div>
         </div>
@@ -122,11 +110,11 @@
         <div class="footer-top">
             <nav class="footer-nav navbar-nav footer-font-size">
                 <ul class="nav flex-column">
-                    <li class="menu-item nav-item"><a class="nav-link" href="/">Strona główna</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link" href="./o-nas.html">O nas</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link" href="./oferta.html">Oferta</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link active" href="./galeria.html">Galeria</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link" href="./kontakt.html">Kontakt</a></li>
+                    <li class="menu-item nav-item"><a class="nav-link" href="../">Strona główna</a></li>
+                    <li class="menu-item nav-item"><a class="nav-link" href="../o-nas.html">O nas</a></li>
+                    <li class="menu-item nav-item"><a class="nav-link active" href="../oferta.html">Oferta</a></li>
+                    <li class="menu-item nav-item"><a class="nav-link" href="../galeria.html">Galeria</a></li>
+                    <li class="menu-item nav-item"><a class="nav-link" href="../kontakt.html">Kontakt</a></li>
                 </ul>
             </nav>
             <article class="text-container">
@@ -155,6 +143,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/fullscreen/lg-fullscreen.min.js" integrity="sha512-11B0rPDzvnSOYzAT37QdnYgt0z9Xg+wX5tckB1QKl5Znl8RPvrB5npo38K2jCt+Ad44udCfBiKt9D4jRdkSE1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js" integrity="sha512-BLW2Jrofiqm6m7JhkQDIh2olT0EBI58+hIL/AXWvo8gOXKmsNlU6myJyEkTy6rOAAZjn0032FRk8sl9RgXPYIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js" integrity="sha512-VBbe8aA3uiK90EUKJnZ4iEs0lKXRhzaAXL8CIHWYReUwULzxkOSxlNixn41OLdX0R1KNP23/s76YPyeRhE6P+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/gallery.js"></script>
+    <script src="../js/gallery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="../js/smooth-scroll.js"></script>
 </body>
 </html>

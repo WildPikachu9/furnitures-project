@@ -70,6 +70,23 @@
             }
         }
     }
+    .arrow-up-container {
+        position: fixed;
+        bottom: 20px;
+        right: 25px;
+        z-index: 10;
+        i {
+            padding: 10px;
+            border: 2px solid $button-color;
+            border-radius: 50%;
+            font-size: $baseline + 10px;
+            color: $button-color; 
+            transition: all .3s;
+            &:hover {
+                background-color: rgba(47, 43, 43, 0.068);
+            }
+        }
+    }
 }
 
 @media all and (min-width: $medium) {

@@ -374,6 +374,23 @@ input[type=checkbox], input[type=radio] {
 .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
   background-color: rgb(36, 164, 197);
 }
+.navbar .arrow-up-container {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  z-index: 10;
+}
+.navbar .arrow-up-container i {
+  padding: 10px;
+  border: 2px solid rgb(36, 164, 197);
+  border-radius: 50%;
+  font-size: 26px;
+  color: rgb(36, 164, 197);
+  transition: all 0.3s;
+}
+.navbar .arrow-up-container i:hover {
+  background-color: rgba(47, 43, 43, 0.068);
+}
 
 @media all and (min-width: 768px) {
   .navbar .container-fluid {
@@ -441,11 +458,15 @@ input[type=checkbox], input[type=radio] {
   z-index: 10;
 }
 .header .carousel .carousel-inner .angles-down i {
-  color: #fff;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
   font-size: 26px;
+  color: #fff;
   transition: all 0.3s;
 }
 .header .carousel .carousel-inner .angles-down i:hover {
+  border-color: rgb(36, 164, 197);
   color: rgb(36, 164, 197);
 }
 @media all and (min-width: 768px) {
@@ -839,6 +860,25 @@ input[type=checkbox], input[type=radio] {
   }
 }
 
+strong, a {
+  color: rgb(36, 164, 197);
+}
+
+ol.upper-roman {
+  list-style-type: upper-roman;
+}
+ol.upper-roman li, ol.upper-roman p {
+  padding: 5px 0;
+}
+
+ol.lower-latin {
+  list-style-type: lower-latin;
+}
+
+ul {
+  list-style: circle;
+}
+
 .btn-panel, .btn-secondary, .btn-primary {
   display: inline-block;
   padding: 15px 35px;
@@ -1049,4 +1089,5 @@ textarea {
 }
 .gallery a img:hover {
   transform: scale(1.4);
+  cursor: zoom-in;
 }/*# sourceMappingURL=style.css.map */

@@ -20,11 +20,14 @@
                 transform: translateX(-50%);
                 z-index: 10;
                 i {
-                    color: #fff;
+                    padding: 10px;
+                    border: 2px solid #fff;
+                    border-radius: 50%;
                     font-size: $baseline + 10px;
+                    color: #fff;
                     transition: all .3s;
-                    
                     &:hover {
+                        border-color: $button-color;
                         color: $button-color;
                     }
                 }
