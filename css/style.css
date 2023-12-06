@@ -374,6 +374,9 @@ input[type=checkbox], input[type=radio] {
 .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
   background-color: rgb(36, 164, 197);
 }
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item.active, .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:active {
+  background-color: rgb(36, 164, 197);
+}
 .navbar .arrow-up-container {
   position: fixed;
   bottom: 20px;

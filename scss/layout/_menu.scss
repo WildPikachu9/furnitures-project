@@ -65,6 +65,9 @@
                                 background-color: $button-color;
                             }
                         }
+                        .dropdown-item.active, .dropdown-item:active {
+                            background-color: $button-color;
+                        }
                     }
                 }
             }
