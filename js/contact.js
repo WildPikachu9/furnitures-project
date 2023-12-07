@@ -19,13 +19,10 @@
 
   //maps
 
-let map = L.map('map').setView([50.032426879808945, 20.006829736497163], 13);
+let map = L.map('map').setView([50.03133914686908, 19.92065947007171], 13);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
-let marker1 = L.marker([50.032426879808945, 20.006829736497163]).addTo(map);
-marker1.bindPopup("<b>BEL-MEB</b><br>Biskupińska 22, Kraków").openPopup();
-
-let marker2 = L.marker([50.03123220536397, 19.920573971164476]).addTo(map);
-marker2.bindPopup("<b>BEL-MEB</b><br>Kobierzyńska 54, Kraków").openPopup();
+let marker = L.marker([50.03133914686908, 19.92065947007171]).addTo(map);
+marker.bindPopup("<b>BEL-MEB</b><br>Kobierzyńska 54, Kraków").openPopup();
