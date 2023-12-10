@@ -1,23 +1,30 @@
 //form-validation
+const forms = document.querySelectorAll('#form');
 
-(() => {
-    'use strict'
-  
-    const forms = document.querySelectorAll('.needs-validation')
-  
-    Array.from(forms).forEach(form => {
-      form.addEventListener('submit', event => {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-  
-        form.classList.add('was-validated')
-      }, false)
-    })
-  })()
+window.onbeforeunload = () => {
+  for(const form of forms) {
+    form.reset();
+  };
+};
 
-  //maps
+document.addEventListener('DOMContentLoaded', function () {
+  'use strict';
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', async  event => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+
+      form.classList.add('was-validated');
+    }, false);
+  });
+});
+
+
+
+
+//maps
 
 let map = L.map('map').setView([50.03133914686908, 19.92065947007171], 13);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
