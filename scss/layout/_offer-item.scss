@@ -1,0 +1,22 @@
+.offer-item {
+    .row {
+        .container-image {
+            img {
+                max-width: 100%;
+            }
+        }
+        @media all and (min-width: 1200px) {
+            @include flex-align(space-between, center);
+            .section-header {
+                max-width: 50%;
+            }
+            .container-image {
+             
+                max-width: 45%;
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

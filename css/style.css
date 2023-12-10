@@ -882,6 +882,25 @@ ul {
   list-style: circle;
 }
 
+.offer-item .row .container-image img {
+  max-width: 100%;
+}
+@media all and (min-width: 1200px) {
+  .offer-item .row {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .offer-item .row .section-header {
+    max-width: 50%;
+  }
+  .offer-item .row .container-image {
+    max-width: 45%;
+  }
+  .offer-item .row .container-image img {
+    max-width: 100%;
+  }
+}
+
 .btn-panel, .btn-secondary, .btn-primary {
   display: inline-block;
   padding: 15px 35px;
