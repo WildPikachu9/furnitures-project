@@ -933,6 +933,10 @@ ul {
   background-color: rgb(248, 249, 250);
 }
 
+.buttons-panel {
+  text-align: center;
+}
+
 .btn-panel {
   border: 1px solid transparent;
   color: rgb(36, 164, 197);
