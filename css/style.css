@@ -617,7 +617,6 @@ input[type=checkbox], input[type=radio] {
     transform: translateY(-50%);
     max-width: 50%;
     background-color: #fff;
-    box-shadow: 0 5px 20px #f0f0f0;
   }
   .offers .container .offers-container:nth-of-type(even) .offers-image {
     text-align: end;
