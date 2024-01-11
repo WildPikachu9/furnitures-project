@@ -66,6 +66,8 @@
 .common-header {
     .header-image {
         position: relative;
+        background-position-y: center;
+        background-position-x: right;
         background-repeat: no-repeat;
         background-size: cover;
         height: 300px;
