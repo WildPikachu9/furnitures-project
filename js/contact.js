@@ -21,9 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
-
-
 //maps
 
 let map = L.map('map').setView([50.03133914686908, 19.92065947007171], 13);
