@@ -608,6 +608,9 @@ input[type=checkbox], input[type=radio] {
     background-color: transparent;
     box-shadow: none;
   }
+  .offers .container .offers-container .offers-image {
+    height: 500px;
+  }
   .offers .container .offers-container .offers-image a img {
     height: 500px;
     width: auto;
