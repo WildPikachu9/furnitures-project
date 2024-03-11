@@ -1,213 +1,406 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Masz pytania dotyczące naszych usług lub chcesz omówić swój projekt mebli na wymiar? Skorzystaj z naszej sekcji Kontakt, aby szybko i łatwo się z nami skomunikować. Jesteśmy do Twojej dyspozycji."
+    />
     <title>Meble na wymiar w Krakowie - BEL-MEB</title>
     <link rel="icon" type="image/x-icon" href="./img/bel-meb-ico.png" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-md bg-body-tertiary">
-        <div class="container-fluid">
-            <a href="./o-nas.html" class="brand"><img src="./img/logo_belmeb-300x100.png" alt="logo-txt"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <hr />
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./">STRONA GŁÓWNA</a>
+      <div class="container-fluid">
+        <a href="./o-nas.html" class="brand"
+          ><img src="./img/logo_belmeb-300x100.png" alt="logo-txt"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <hr />
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./"
+                >STRONA GŁÓWNA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./o-nas.html">O NAS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >OFERTA</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./oferta/meble-kuchenne-na-wymiar.html"
+                    >Meble kuchenne na wymiar</a
+                  >
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./o-nas.html">O NAS</a>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./oferta/szafy-wnekowe-garderoby.html"
+                    >Szafy wnękowe i garderoby</a
+                  >
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">OFERTA</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./oferta/meble-kuchenne-na-wymiar.html">Meble kuchenne na wymiar</a></li>
-                        <li><a class="dropdown-item" href="./oferta/szafy-wnekowe-garderoby.html">Szafy wnękowe i garderoby</a></li>
-                        <li><a class="dropdown-item" href="./oferta/meble-lazienkowe.html">Meble łazienkowe</a></li>
-                        <li><a class="dropdown-item" href="./oferta/meble-biurowe.html">Meble biurowe</a></li>
-                        <li><a class="dropdown-item" href="./oferta/zabudowy-skosow-poddaszy.html">Zabudowy skosów / poddaszy</a></li>
-                        <li><a class="dropdown-item" href="./oferta/meble-dzieciece-i-mlodziezowe.html">Meble dziecięce i młodzieżowe</a></li>
-                        <li><a class="dropdown-item" href="./oferta/nietypowe-meble-na-wymiar.html">Nietypowe meble na wymiar</a></li>
-                    </ul>
+                <li>
+                  <a class="dropdown-item" href="./oferta/meble-lazienkowe.html"
+                    >Meble łazienkowe</a
+                  >
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./galeria.html">GALERIA</a>
+                <li>
+                  <a class="dropdown-item" href="./oferta/meble-biurowe.html"
+                    >Meble biurowe</a
+                  >
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="./kontakt.html">KONTAKT</a>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./oferta/zabudowy-skosow-poddaszy.html"
+                    >Zabudowy skosów / poddaszy</a
+                  >
                 </li>
-                </ul>
-            </div>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./oferta/meble-dzieciece-i-mlodziezowe.html"
+                    >Meble dziecięce i młodzieżowe</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./oferta/nietypowe-meble-na-wymiar.html"
+                    >Nietypowe meble na wymiar</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./galeria.html">GALERIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./kontakt.html">KONTAKT</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <header class="header common-header">
-        <div class="header-image d-block w-100" style="background-image: url(./img/header1.png);">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcrumb-container">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item available-link"><a href="./">Strona główna</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Kontakt</li>
-                </ol>
-            </nav>
-        </div>
+      <div
+        class="header-image d-block w-100"
+        style="background-image: url(./img/header1.png)"
+      >
+        <nav
+          style="--bs-breadcrumb-divider: '>'"
+          aria-label="breadcrumb"
+          class="breadcrumb-container"
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item available-link">
+              <a href="./">Strona główna</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Kontakt</li>
+          </ol>
+        </nav>
+      </div>
     </header>
 
     <section id="contact" class="contact">
-        <div class="container">
-            <header class="section-header">
-                <h2>Kontakt z producentem mebli na wymiar BEL-MEB</h2>
-                <hr class="offers-hr"/>
-                <p>Wszystkich zainteresowanych naszą ofertą zapraszamy do kontaktu. Chętnie odpowiemy na nurtujące pytania i rozwiejemy wszelkie wątpliwości.</p>
-            </header>
-            <div class="row">
-                <div class="contact-data col col-md-33p">
-                    <div class="contact-item">
-                        <span class="img-holder">
-                            <i class="fa fa-phone"></i>
-                        </span>
-                        <div class="col">
-                            <h3>zadzwoń</h3>
-                            <p>
-                                <a href="tel:+48602321810" class="contact-data-link">602 321 810</a><br>
-                                <a href="tel:+48575408007" class="contact-data-link">575 408 007</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="img-holder">
-                            <i class="fa fa-envelope"></i>
-                        </span>
-                        <div class="col">
-                            <h3>napisz</h3>
-                            <p><a href="mailto:info@bel-meb.pl">info@bel-meb.pl</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="img-holder">
-                            <i class="fa fa-facebook"></i>
-                        </span>
-                        <div class="col">
-                            <h3>obserwuj</h3>
-                            <p><a href="https://www.facebook.com/belmebpl">Meble na wymiar | BEL-MEB</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="img-holder">
-                            <i class="fa fa-map-location-dot"></i>
-                        </span>
-                        <div class="col">
-                            <h3>adres</h3>
-                            <p>
-                                <a href="https://www.google.com/maps/place/Bel-Meb/@50.0324372,20.0042246,17z/data=!3m1!4b1!4m6!3m5!1s0x471645cbe3d6db23:0xf784cffe8bcbd97b!8m2!3d50.0324338!4d20.0067995!16s%2Fg%2F11nfm9zqdb?authuser=0&entry=ttu" class="contact-data-link">Kobierzyńska 54<br>30-382 Kraków</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="img-holder">
-                            <i class="fa fa-clock"></i>
-                        </span>
-                        <div class="col">
-                            <h3>godziny otwarcia</h3>
-                            <p>Pon. - Pt. 9:00 - 18:00</p>
-                            <p>Sob. 10:00 - 14:00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form col col-md-66p">
-                    <form action="https://formspree.io/f/xvojjlge" method="POST" id="form" class="row g-3 needs-validation" novalidate>
-                        <div class="invalid-feedback">
-                            Proszę poprawnie wypełnić wszystkie wymagane pola.
-                        </div>
-                        <div class="col-md-6">
-                          <input type="text" class="form-control" id="name" name="Imię / Nazwa" placeholder="Imię / Nazwa" required>
-                          <div class="invalid-feedback">
-                            Proszę podać imię lub nazwę.
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <input type="email" class="form-control" id="email" name="E-mail" placeholder="E-mail" required>
-                          <div class="invalid-feedback">Proszę podać poprawny adres e-mail.</div>
-                        </div>
-                        <div class="col-md-6">
-                          <input type="text" class="form-control" id="number" name="Numer Telefonu" placeholder="Numer Telefonu" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" pattern="[0-9]{9}" required>
-                          <div class="invalid-feedback">
-                            Proszę podać numer telefonu.
-                        </div>
-                        </div>
-                        <div class="col-md-6">
-                          <input type="text" class="form-control" id="theme" name="Temat" placeholder="Temat" required>
-                        </div>
-                        <div class="col-md-6">
-                            <textarea class="form-control" id="message" name="Wiadomość" placeholder="Wiadomość" required></textarea>
-                            <div class="invalid-feedback">
-                                Proszę wpisać treść wiadomości.
-                            </div>
-                          </div>
-                        <div class="col-md-6">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <label class="form-check-label" for="invalidCheck">
-                                Zapoznałem się z <a href="./polityka-prywatnosci.html">Polityką prywatności</a> serwisu <a href="./">www.bel-meb.pl</a> oraz wyrażam zgodę na przetwarzanie przez TOMASZ RÓG F.H.U BEL-MEB, Nowosądecka 31/84 30-683 Kraków, udostępnionych przeze mnie danych osobowych na zasadach opisanych w <a href="./polityka-prywatnosci.html">Polityce prywatności</a> dostępnej w Serwisie. Oświadczam, że są mi znane cele przetwarzania danych oraz moje uprawnienia. Niniejsza zgoda może być wycofana w dowolnym czasie poprzez kontakt z Administratorem pod adresem <a href="mailto:info@bel-meb.pl">info@bel-meb.pl</a>, bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem.
-                                Więcej informacji dotyczących przetwarzania danych osobowych - <a href="./obowiazek-informacyjny.html">Obowiązek Informacyjny</a>.
-                             </label>                             
-                            <div class="invalid-feedback">
-                                Proszę zaakceptować warunki.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 btn-container">
-                            <button class="btn-secondary" type="submit">wyślij wiadomość &#8594;</button>
-                        </div>
-                    </form>
-                </div>
+      <div class="container">
+        <header class="section-header">
+          <h2>Kontakt z producentem mebli na wymiar BEL-MEB</h2>
+          <hr class="offers-hr" />
+          <p>
+            Wszystkich zainteresowanych naszą ofertą zapraszamy do kontaktu.
+            Chętnie odpowiemy na nurtujące pytania i rozwiejemy wszelkie
+            wątpliwości.
+          </p>
+        </header>
+        <div class="row">
+          <div class="contact-data col col-md-33p">
+            <div class="contact-item">
+              <span class="img-holder">
+                <i class="fa fa-phone"></i>
+              </span>
+              <div class="col">
+                <h3>zadzwoń</h3>
+                <p>
+                  <a href="tel:+48602321810" class="contact-data-link"
+                    >602 321 810</a
+                  ><br />
+                  <a href="tel:+48575408007" class="contact-data-link"
+                    >575 408 007</a
+                  >
+                </p>
+              </div>
             </div>
+            <div class="contact-item">
+              <span class="img-holder">
+                <i class="fa fa-envelope"></i>
+              </span>
+              <div class="col">
+                <h3>napisz</h3>
+                <p><a href="mailto:info@bel-meb.pl">info@bel-meb.pl</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="img-holder">
+                <i class="fa fa-facebook"></i>
+              </span>
+              <div class="col">
+                <h3>obserwuj</h3>
+                <p>
+                  <a href="https://www.facebook.com/belmebpl"
+                    >Meble na wymiar | BEL-MEB</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="img-holder">
+                <i class="fa fa-map-location-dot"></i>
+              </span>
+              <div class="col">
+                <h3>adres</h3>
+                <p>
+                  <a
+                    href="https://www.google.com/maps/place/Bel-Meb/@50.0324372,20.0042246,17z/data=!3m1!4b1!4m6!3m5!1s0x471645cbe3d6db23:0xf784cffe8bcbd97b!8m2!3d50.0324338!4d20.0067995!16s%2Fg%2F11nfm9zqdb?authuser=0&entry=ttu"
+                    class="contact-data-link"
+                    >Kobierzyńska 54<br />30-382 Kraków</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="img-holder">
+                <i class="fa fa-clock"></i>
+              </span>
+              <div class="col">
+                <h3>godziny otwarcia</h3>
+                <p>Pon. - Pt. 9:00 - 18:00</p>
+                <p>Sob. 10:00 - 14:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form col col-md-66p">
+            <form
+              action="https://formspree.io/f/xvojjlge"
+              method="POST"
+              id="form"
+              class="row g-3 needs-validation"
+              novalidate
+            >
+              <div class="invalid-feedback">
+                Proszę poprawnie wypełnić wszystkie wymagane pola.
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="Imię / Nazwa"
+                  placeholder="Imię / Nazwa"
+                  required
+                />
+                <div class="invalid-feedback">Proszę podać imię lub nazwę.</div>
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="E-mail"
+                  placeholder="E-mail"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Proszę podać poprawny adres e-mail.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="number"
+                  name="Numer Telefonu"
+                  placeholder="Numer Telefonu"
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
+                  pattern="[0-9]{9}"
+                  required
+                />
+                <div class="invalid-feedback">Proszę podać numer telefonu.</div>
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="theme"
+                  name="Temat"
+                  placeholder="Temat"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="Wiadomość"
+                  placeholder="Wiadomość"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">
+                  Proszę wpisać treść wiadomości.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="invalidCheck"
+                    required
+                  />
+                  <label class="form-check-label" for="invalidCheck">
+                    Zapoznałem się z
+                    <a href="./polityka-prywatnosci.html"
+                      >Polityką prywatności</a
+                    >
+                    serwisu <a href="./">www.bel-meb.pl</a> oraz wyrażam zgodę
+                    na przetwarzanie przez TOMASZ RÓG F.H.U BEL-MEB, Nowosądecka
+                    31/84 30-683 Kraków, udostępnionych przeze mnie danych
+                    osobowych na zasadach opisanych w
+                    <a href="./polityka-prywatnosci.html"
+                      >Polityce prywatności</a
+                    >
+                    dostępnej w Serwisie. Oświadczam, że są mi znane cele
+                    przetwarzania danych oraz moje uprawnienia. Niniejsza zgoda
+                    może być wycofana w dowolnym czasie poprzez kontakt z
+                    Administratorem pod adresem
+                    <a href="mailto:info@bel-meb.pl">info@bel-meb.pl</a>, bez
+                    wpływu na zgodność z prawem przetwarzania, którego dokonano
+                    na podstawie zgody przed jej cofnięciem. Więcej informacji
+                    dotyczących przetwarzania danych osobowych -
+                    <a href="./obowiazek-informacyjny.html"
+                      >Obowiązek Informacyjny</a
+                    >.
+                  </label>
+                  <div class="invalid-feedback">
+                    Proszę zaakceptować warunki.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 btn-container">
+                <button class="btn-secondary" type="submit">
+                  wyślij wiadomość &#8594;
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
-    <div id="map" style="height: 400px; width: 100%;"></div>
+    <div id="map" style="height: 400px; width: 100%"></div>
 
     <footer class="page-footer">
-        <div class="footer-top">
-            <nav class="footer-nav navbar-nav footer-font-size">
-                <ul class="nav flex-column">
-                    <li class="menu-item nav-item"><a class="nav-link" href="./">Strona główna</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link" href="./o-nas.html">O nas</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link" href="./oferta.html">Oferta</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link" href="./galeria.html">Galeria</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link active" href="./kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
-            <article class="text-container">
-                <h3>F.H.U. BEL-MEB</h3>
-                <address>
-                    <p class="footer-font-size">Kobierzyńska 54</p>
-                    <p class="footer-font-size">30-382 Kraków</p>
-                    <p class="footer-font-size">tel:<a href="tel:+48602321810" class="link-footer footer-font-size">602 321 810</a>i<a href="tel:+48575408007" class="link-footer footer-font-size">575 408 007</a></p>
-                    <p class="footer-font-size">email:<a href="mailto:info@bel-meb.pl" class="link-footer footer-font-size">info@bel-meb.pl</a></p>
-                </address>
-            </article>
-            <div class="logo-footer">
-                <img src="./img/logo_belmeb-300x100.png" alt="logo">
-            </div>
+      <div class="footer-top">
+        <nav class="footer-nav navbar-nav footer-font-size">
+          <ul class="nav flex-column">
+            <li class="menu-item nav-item">
+              <a class="nav-link" href="./">Strona główna</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a class="nav-link" href="./o-nas.html">O nas</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a class="nav-link" href="./oferta.html">Oferta</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a class="nav-link" href="./galeria.html">Galeria</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a class="nav-link active" href="./kontakt.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <article class="text-container">
+          <h3>F.H.U. BEL-MEB</h3>
+          <address>
+            <p class="footer-font-size">Kobierzyńska 54</p>
+            <p class="footer-font-size">30-382 Kraków</p>
+            <p class="footer-font-size">
+              tel:<a
+                href="tel:+48602321810"
+                class="link-footer footer-font-size"
+                >602 321 810</a
+              >i<a href="tel:+48575408007" class="link-footer footer-font-size"
+                >575 408 007</a
+              >
+            </p>
+            <p class="footer-font-size">
+              email:<a
+                href="mailto:info@bel-meb.pl"
+                class="link-footer footer-font-size"
+                >info@bel-meb.pl</a
+              >
+            </p>
+          </address>
+        </article>
+        <div class="logo-footer">
+          <img src="./img/logo_belmeb-300x100.png" alt="logo" />
         </div>
-        <div class="footer-bottom">
-            <a href="./polityka-prywatnosci.html" class="link-footer footer-font-size">Polityka prywatnośći</a>
-            <p class="copy footer-font-size">&copy Projekt i realizacja 2023</p>
-        </div>
+      </div>
+      <div class="footer-bottom">
+        <a
+          href="./polityka-prywatnosci.html"
+          class="link-footer footer-font-size"
+          >Polityka prywatnośći</a
+        >
+        <p class="copy footer-font-size">&copy Projekt i realizacja 2023</p>
+      </div>
     </footer>
 
     <script src="./js/contact.js"></script>
-    <script src="https://kit.fontawesome.com/97ace15257.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/97ace15257.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,257 +1,734 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Przejrzyj naszą Galerię, aby zobaczyć, jak nasze meble na wymiar stanowią doskonałe dopełnienie różnych przestrzeni. Odkryj unikalne projekty dostosowane do indywidualnych potrzeb."
+    />
     <title>Meble na wymiar w Krakowie - BEL-MEB</title>
     <link rel="icon" type="image/x-icon" href="./img/bel-meb-ico.png" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css" integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-fullscreen.min.css" integrity="sha512-JlgW3xkdBcsdFiSfFk5Cfj3sTgo3hA63/lPmZ4SXJegICSLcH43BuwDNlC9fqoUy2h3Tma8Eo48xlZ5XMjM+aQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-zoom.min.css" integrity="sha512-vIrTyLijDDcUJrQGs1jduUCSVa3+A2DaWpVfNyj4lmXkqURVQJ8LL62nebC388QV3P4yFBSt/ViDX8LRW0U6uw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css" integrity="sha512-GRxDpj/bx6/I4y6h2LE5rbGaqRcbTu4dYhaTewlS8Nh9hm/akYprvOTZD7GR+FRCALiKfe8u1gjvWEEGEtoR6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <nav id="nav" class="navbar navbar-expand-md bg-body-tertiary">
-        <div class="container-fluid">
-            <a href="./o-nas.html" class="brand"><img src="./img/logo_belmeb-300x100.png" alt="logo-txt"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <hr />
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./">STRONA GŁÓWNA</a>
+      <div class="container-fluid">
+        <a href="./o-nas.html" class="brand"
+          ><img src="./img/logo_belmeb-300x100.png" alt="logo-txt"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <hr />
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./"
+                >STRONA GŁÓWNA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./o-nas.html">O NAS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >OFERTA</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./oferta/meble-kuchenne-na-wymiar.html"
+                    >Meble kuchenne na wymiar</a
+                  >
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./o-nas.html">O NAS</a>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./oferta/szafy-wnekowe-garderoby.html"
+                    >Szafy wnękowe i garderoby</a
+                  >
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">OFERTA</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./oferta/meble-kuchenne-na-wymiar.html">Meble kuchenne na wymiar</a></li>
-                        <li><a class="dropdown-item" href="./oferta/szafy-wnekowe-garderoby.html">Szafy wnękowe i garderoby</a></li>
-                        <li><a class="dropdown-item" href="./oferta/meble-lazienkowe.html">Meble łazienkowe</a></li>
-                        <li><a class="dropdown-item" href="./oferta/meble-biurowe.html">Meble biurowe</a></li>
-                        <li><a class="dropdown-item" href="./oferta/zabudowy-skosow-poddaszy.html">Zabudowy skosów / poddaszy</a></li>
-                        <li><a class="dropdown-item" href="./oferta/meble-dzieciece-i-mlodziezowe.html">Meble dziecięce i młodzieżowe</a></li>
-                        <li><a class="dropdown-item" href="./oferta/nietypowe-meble-na-wymiar.html">Nietypowe meble na wymiar</a></li>
-                    </ul>
+                <li>
+                  <a class="dropdown-item" href="./oferta/meble-lazienkowe.html"
+                    >Meble łazienkowe</a
+                  >
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="./galeria.html">GALERIA</a>
+                <li>
+                  <a class="dropdown-item" href="./oferta/meble-biurowe.html"
+                    >Meble biurowe</a
+                  >
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./kontakt.html">KONTAKT</a>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./oferta/zabudowy-skosow-poddaszy.html"
+                    >Zabudowy skosów / poddaszy</a
+                  >
                 </li>
-                </ul>
-            </div>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./oferta/meble-dzieciece-i-mlodziezowe.html"
+                    >Meble dziecięce i młodzieżowe</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./oferta/nietypowe-meble-na-wymiar.html"
+                    >Nietypowe meble na wymiar</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./galeria.html">GALERIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./kontakt.html">KONTAKT</a>
+            </li>
+          </ul>
         </div>
-        <div class="arrow-up-container">
-            <a class="arrow-up hash" href="#nav"><i class="fa fa-angles-up"></i></a>
-        </div>
+      </div>
+      <div class="arrow-up-container">
+        <a
+          class="arrow-up hash"
+          href="#nav"
+          aria-label="Przejdź do menu nawigacyjnego"
+          ><i class="fa fa-angles-up"></i
+        ></a>
+      </div>
     </nav>
 
     <header class="header common-header">
-        <div class="header-image d-block w-100" style="background-image: url(./img/header1.png);">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcrumb-container">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item available-link"><a href="./">Strona główna</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Galeria</li>
-                </ol>
-            </nav>
-        </div>
+      <div
+        class="header-image d-block w-100"
+        style="background-image: url(./img/header1.png)"
+      >
+        <nav
+          style="--bs-breadcrumb-divider: '>'"
+          aria-label="breadcrumb"
+          class="breadcrumb-container"
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item available-link">
+              <a href="./">Strona główna</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Galeria</li>
+          </ol>
+        </nav>
+      </div>
     </header>
 
     <section id="gallery" class="gallery-container">
-        <div class="container">
-            <header class="section-header">
-                <h2>Galeria naszych realizacji</h2>
-                <hr class="offers-hr">
-                <p>Z dumą prezentujemy <strong>unikalne&nbsp;meble</strong>, które stworzyliśmy, inspirując się różnorodnymi stylami i indywidualnymi potrzebami naszych klientów. Przejrzyj naszą galerię, aby zobaczyć, jak  <strong>oryginalne&nbsp;meble&nbsp;na&nbsp;zamówienie</strong> mogą nadać charakteru każdemu pomieszczeniu.</p>
-            </header>
-            <div class="buttons-panel">
-                <button class="btn-panel" onclick="filterGallery('all')">Wszystko</button>
-                <button class="btn-panel" onclick="filterGallery('kitchen')">Meble kuchenne</button>
-                <button class="btn-panel" onclick="filterGallery('wardrobe')">Szafy wnękowe i garderoby</button>
-                <button class="btn-panel" onclick="filterGallery('bathroom')">Meble łazienkowe</button>
-                <button class="btn-panel" onclick="filterGallery('office')">Meble biurowe</button>
-                <button class="btn-panel" onclick="filterGallery('attic')">Zabudowy skosów i poddaszy</button>
-                <button class="btn-panel" onclick="filterGallery('children')">Meble dziecięce</button>
-                <button class="btn-panel" onclick="filterGallery('unusual')">Nietypowe meble na wymiar</button>
-            </div>
-            <div id="lightgallery" class="gallery">
-                <a href="./img/kitchen/kuchnia-na-wymiar-ciemnoszara.png" data-lg-size="1600-2400" class="kitchen">
-                    <img alt="Kuchnia na wymiar ciemnoszara" src="./img/kitchen/kuchnia-na-wymiar-ciemnoszara.png" loading="lazy" />
-                </a>
-                <a href="./img/kitchen/kuchnia-biala.png" data-lg-size="1024-800" class="kitchen">
-                    <img alt="Kuchnia na wymiar biała" src="./img/kitchen/kuchnia-biala.png" loading="lazy" />
-                </a>
-                <a href="./img/kitchen/kuchnia-biala-szuflady.png" data-lg-size="1600-2400" class="kitchen">
-                    <img alt="Szuflady do mebli kuchennych" src="./img/kitchen/kuchnia-biala-szuflady.png" loading="lazy" />
-                </a>
-                <a href="./img/kitchen/meble-kuchnne.png" data-lg-size="1024-800" class="kitchen">
-                    <img alt="Kuchnia w kolorze drewna" src="./img/kitchen/meble-kuchnne.png" loading="lazy" />
-                </a>
-                <a href="./img/kitchen/kuchnia-lakierowana-biala-1.jpg" data-lg-size="1024-800" class="kitchen">
-                    <img alt="Kuchnia biała lakierowana" src="./img/kitchen/kuchnia-lakierowana-biala-1.jpg" loading="lazy" />
-                </a>
-                <a href="./img/kitchen/kuchnia-lakierowana-biala-2.jpg" data-lg-size="1024-800" class="kitchen">
-                    <img alt="Kuchnia biała lakierowana" src="./img/kitchen/kuchnia-lakierowana-biala-2.jpg" loading="lazy" />
-                </a>
-                <a href="./img/banner3.jpg" data-lg-size="1024-800" class="kitchen">
-                    <img alt="Kuchnia biała lakierowana" src="./img/banner3.jpg" loading="lazy" />
-                </a>
-                <a href="./img/wardrobe/mebloscianka-biala-do-sypialni.jpg" data-lg-size="1600-2400" class="wardrobe">
-                    <img alt="Meblościanka biała do sypialni" src="./img/wardrobe/mebloscianka-biala-do-sypialni.jpg" loading="lazy" />
-                </a>
-                <a href="./img/wardrobe/mebloscianka-biala-z-lozkiem.jpg" data-lg-size="1600-2400" class="wardrobe">
-                    <img alt="Meblościanka biała z łóżkiem" src="./img/wardrobe/mebloscianka-biala-z-lozkiem.jpg" loading="lazy" />
-                </a>
-                <a href="./img/wardrobe/mebloscianka-biala.jpg" data-lg-size="1600-2400" class="wardrobe">
-                    <img alt="Meblościanka biała do sypialni" src="./img/wardrobe/mebloscianka-biala.jpg" loading="lazy" />
-                </a>
-                <a href="./img/wardrobe/mebloscianka-z-lozkiem-1.jpg" data-lg-size="1600-2400" class="wardrobe">
-                    <img alt="Meblościanka w kolorze białym do sypialni" src="./img/wardrobe/mebloscianka-z-lozkiem-1.jpg" loading="lazy" />
-                </a>
-                <a href="./img/wardrobe/szafa-do-przedpokoju-z-lustrem.jpg" data-lg-size="1600-2400" class="wardrobe">
-                    <img alt="Szafa do przedpokoju z lustrem" src="./img/wardrobe/szafa-do-przedpokoju-z-lustrem.jpg" loading="lazy" />
-                </a>
-                <a href="./img/wardrobe/szafa-przedpokoj-1.png" data-lg-size="1600-2400" class="wardrobe">
-                    <img alt="Szafa do przedpokoju granatowa" src="./img/wardrobe/szafa-przedpokoj-1.png" loading="lazy" />
-                </a>
-                <a href="./img/wardrobe/garderoba-szara-1.png" data-lg-size="1024-800" class="wardrobe">
-                    <img alt="Garderoba w kolorze szarym" src="./img/wardrobe/garderoba-szara-1.png" loading="lazy" />
-                </a>
-                <a href="./img/wardrobe/garderoba-szara-2.png" data-lg-size="1024-800" class="wardrobe">
-                    <img alt="Garderoba w kolorze szarym (wnętrz)" src="./img/wardrobe/garderoba-szara-2.png" loading="lazy" />
-                </a>
-                <a href="./img/wardrobe/szafa-przedpokoj-bezowa.png" data-lg-size="1600-2400" class="wardrobe">
-                    <img alt="Szafa do przedpokoju beżowa" src="./img/wardrobe/szafa-przedpokoj-bezowa.png" loading="lazy" />
-                </a>
-                <a href="./img/attic/zabudowa-schodow.png" data-lg-size="1024-800" class="attic">
-                    <img alt="Zabudowa pod schodami" src="./img/attic/zabudowa-schodow.png" loading="lazy" />
-                </a>
-                <a href="./img/bathroom/szafka-lazienkowa-biala.jpg" data-lg-size="1024-800" class="bathroom">
-                    <img alt="Szafka łazienkowa biała" src="./img/bathroom/szafka-lazienkowa-biala.jpg" loading="lazy" />
-                </a>
-                <a href="./img/bathroom/szafka-pod-umywalke-1.jpg" data-lg-size="1024-800" class="bathroom">
-                    <img alt="Szafka pod umywalkę" src="./img/bathroom/szafka-pod-umywalke-1.jpg" loading="lazy" />
-                </a>
-                <a href="./img/bathroom/szafka-pod-umywalke-2.jpg" data-lg-size="1024-800" class="bathroom">
-                    <img alt="Szafka pod umywalkę" src="./img/bathroom/szafka-pod-umywalke-2.jpg" loading="lazy" />
-                </a>
-                <a href="./img/unusual/szafa-z-RTV.png" data-lg-size="1024-800" class="unusual">
-                    <img alt="Meblościanka z szafką RTV" src="./img/unusual/szafa-z-RTV.png" loading="lazy" />
-                </a>
-                <a href="./img/unusual/garderoba-ze-szklanymi-drzwiami.png" data-lg-size="1024-800" class="unusual">
-                    <img alt="Garderoba ze szklanymi drzwiami" src="./img/unusual/garderoba-ze-szklanymi-drzwiami.png" loading="lazy" />
-                </a>
-                <a href="./img/wardrobe/szafa-wnekowa-biala.png" data-lg-size="1600-2400" class="wardrobe">
-                    <img alt="Meblościanka biała" src="./img/wardrobe/szafa-wnekowa-biala.png" loading="lazy" />
-                </a>
-                <a href="./img/wardrobe/garderoba-biala-1.jpg" data-lg-size="1024-800" class="wardrobe">
-                    <img alt="Garderoba w kolorze białym" src="./img/wardrobe/garderoba-biala-1.jpg" loading="lazy" />
-                </a>
-                <a href="./img/wardrobe/garderoba-biala-2.jpg" data-lg-size="1024-800" class="wardrobe">
-                    <img alt="Garderoba biała" src="./img/wardrobe/garderoba-biala-2.jpg" loading="lazy" />
-                </a>
-                <a href="./img/children/biurko-dzieciece.jpg" data-lg-size="1024-800" class="children">
-                    <img alt="Biurko dziecięce białe" src="./img/children/biurko-dzieciece.jpg" loading="lazy" />
-                </a>
-                <a href="./img/children/meble-dzieciece-biale.jpg" data-lg-size="1024-800" class="children">
-                    <img alt="Meble dziecięce białe" src="./img/children/meble-dzieciece-biale.jpg" loading="lazy" />
-                </a>
-                <a href="./img/children/polka-na-ksiazki.jpg" data-lg-size="1024-800" class="children">
-                    <img alt="Półka na książki" src="./img/children/polka-na-ksiazki.jpg" loading="lazy" />
-                </a>
-                <a href="./img/unusual/szafka-pod-rtv.jpg" data-lg-size="1024-800" class="unusual">
-                    <img alt="Szafki wiszące" src="./img/unusual/szafka-pod-rtv.jpg" loading="lazy" />
-                </a>
-                <a href="./img/bathroom/szafka-lazienkowa-2.jpg" data-lg-size="1024-800" class="bathroom">
-                    <img alt="Szafka pod umywalkę" src="./img/bathroom/szafka-lazienkowa-2.jpg" loading="lazy" />
-                </a>
-                <a href="./img/bathroom/szafka-lazienkowa-1.jpg" data-lg-size="1024-800" class="bathroom">
-                    <img alt="Szafka umywalkowa czarno-biała" src="./img/bathroom/szafka-lazienkowa-1.jpg" loading="lazy" />
-                </a>
-                <a href="./img/bathroom/szafka-pod-umywalke-biala.jpg" data-lg-size="1024-800" class="bathroom">
-                    <img alt="Szafka umywalkowa biała" src="./img/bathroom/szafka-pod-umywalke-biala.jpg" loading="lazy" />
-                </a>
-                <a href="./img/office/biurko-do-gabinetu.jpg" data-lg-size="1024-800" class="office">
-                    <img alt="Biurko do gabinetu" src="./img/office/biurko-do-gabinetu.jpg" loading="lazy" />
-                </a>
-                <a href="./img/office/meble-biurowe-1.jpg" data-lg-size="1024-800" class="office">
-                    <img alt="Meble do biura" src="./img/office/meble-biurowe-1.jpg" loading="lazy" />
-                </a>
-                <a href="./img/office/meble-biurowe-2.jpg" data-lg-size="1024-800" class="office">
-                    <img alt="Meble biurowe" src="./img/office/meble-biurowe-2.jpg" loading="lazy" />
-                </a>
-                <a href="./img/office/komoda-1.jpg" data-lg-size="1600-2400" class="office">
-                    <img alt="Komoda" src="./img/office/komoda-1.jpg" loading="lazy" />
-                </a>
-                <a href="./img/attic/garderoba-na-poddaszu.jpg" data-lg-size="1024-800" class="attic">
-                    <img alt="Meblościanka na poddaszu ze skosem" src="./img/attic/garderoba-na-poddaszu.jpg" loading="lazy" />
-                </a>
-                <a href="./img/attic/garderoba-na-poddaszu-2.jpg" data-lg-size="1024-800" class="attic">
-                    <img alt="Garderoba na poddaszu ze skosem" src="./img/attic/garderoba-na-poddaszu-2.jpg" loading="lazy" />
-                </a>
-                <a href="./img/attic/zabudowa-skosow-2.jpg" data-lg-size="1024-800" class="attic">
-                    <img alt="Garderoba na poddaszu ze skosem 2" src="./img/attic/zabudowa-skosow-2.jpg" loading="lazy" />
-                </a>
-                <a href="./img/attic/zabudowa-skosow.jpg" data-lg-size="1024-800" class="attic">
-                    <img alt="Zabudowa skosów" src="./img/attic/zabudowa-skosow.jpg" loading="lazy" />
-                </a>
-                <a href="./img/attic/zabudowa-skosow-czerwona.jpg" data-lg-size="1024-800" class="attic">
-                    <img alt="Meblościanka na poddaszu ze skosem czerwona" src="./img/attic/zabudowa-skosow-czerwona.jpg" loading="lazy" />
-                </a>
-            </div>
+      <div class="container">
+        <header class="section-header">
+          <h2>Galeria naszych realizacji</h2>
+          <hr class="offers-hr" />
+          <p>
+            Z dumą prezentujemy <strong>unikalne&nbsp;meble</strong>, które
+            stworzyliśmy, inspirując się różnorodnymi stylami i indywidualnymi
+            potrzebami naszych klientów. Przejrzyj naszą galerię, aby zobaczyć,
+            jak
+            <strong>oryginalne&nbsp;meble&nbsp;na&nbsp;zamówienie</strong> mogą
+            nadać charakteru każdemu pomieszczeniu.
+          </p>
+        </header>
+        <div class="buttons-panel">
+          <button class="btn-panel" onclick="filterGallery('all')">
+            Wszystko
+          </button>
+          <button class="btn-panel" onclick="filterGallery('kitchen')">
+            Meble kuchenne
+          </button>
+          <button class="btn-panel" onclick="filterGallery('wardrobe')">
+            Szafy wnękowe i garderoby
+          </button>
+          <button class="btn-panel" onclick="filterGallery('bathroom')">
+            Meble łazienkowe
+          </button>
+          <button class="btn-panel" onclick="filterGallery('office')">
+            Meble biurowe
+          </button>
+          <button class="btn-panel" onclick="filterGallery('attic')">
+            Zabudowy skosów i poddaszy
+          </button>
+          <button class="btn-panel" onclick="filterGallery('children')">
+            Meble dziecięce
+          </button>
+          <button class="btn-panel" onclick="filterGallery('unusual')">
+            Nietypowe meble na wymiar
+          </button>
         </div>
+        <div id="lightgallery" class="gallery">
+          <a
+            href="./img/kitchen/kuchnia-na-wymiar-ciemnoszara.png"
+            data-lg-size="1600-2400"
+            class="kitchen"
+          >
+            <img
+              alt="Kuchnia na wymiar ciemnoszara"
+              src="./img/kitchen/kuchnia-na-wymiar-ciemnoszara.png"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/kitchen/kuchnia-biala.png"
+            data-lg-size="1024-800"
+            class="kitchen"
+          >
+            <img
+              alt="Kuchnia na wymiar biała"
+              src="./img/kitchen/kuchnia-biala.png"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/kitchen/kuchnia-biala-szuflady.png"
+            data-lg-size="1600-2400"
+            class="kitchen"
+          >
+            <img
+              alt="Szuflady do mebli kuchennych"
+              src="./img/kitchen/kuchnia-biala-szuflady.png"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/kitchen/meble-kuchnne.png"
+            data-lg-size="1024-800"
+            class="kitchen"
+          >
+            <img
+              alt="Kuchnia w kolorze drewna"
+              src="./img/kitchen/meble-kuchnne.png"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/kitchen/kuchnia-lakierowana-biala-1.jpg"
+            data-lg-size="1024-800"
+            class="kitchen"
+          >
+            <img
+              alt="Kuchnia biała lakierowana"
+              src="./img/kitchen/kuchnia-lakierowana-biala-1.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/kitchen/kuchnia-lakierowana-biala-2.jpg"
+            data-lg-size="1024-800"
+            class="kitchen"
+          >
+            <img
+              alt="Kuchnia biała lakierowana"
+              src="./img/kitchen/kuchnia-lakierowana-biala-2.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a href="./img/banner3.jpg" data-lg-size="1024-800" class="kitchen">
+            <img
+              alt="Kuchnia biała lakierowana"
+              src="./img/banner3.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/wardrobe/mebloscianka-biala-do-sypialni.jpg"
+            data-lg-size="1600-2400"
+            class="wardrobe"
+          >
+            <img
+              alt="Meblościanka biała do sypialni"
+              src="./img/wardrobe/mebloscianka-biala-do-sypialni.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/wardrobe/mebloscianka-biala-z-lozkiem.jpg"
+            data-lg-size="1600-2400"
+            class="wardrobe"
+          >
+            <img
+              alt="Meblościanka biała z łóżkiem"
+              src="./img/wardrobe/mebloscianka-biala-z-lozkiem.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/wardrobe/mebloscianka-biala.jpg"
+            data-lg-size="1600-2400"
+            class="wardrobe"
+          >
+            <img
+              alt="Meblościanka biała do sypialni"
+              src="./img/wardrobe/mebloscianka-biala.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/wardrobe/mebloscianka-z-lozkiem-1.jpg"
+            data-lg-size="1600-2400"
+            class="wardrobe"
+          >
+            <img
+              alt="Meblościanka w kolorze białym do sypialni"
+              src="./img/wardrobe/mebloscianka-z-lozkiem-1.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/wardrobe/szafa-do-przedpokoju-z-lustrem.jpg"
+            data-lg-size="1600-2400"
+            class="wardrobe"
+          >
+            <img
+              alt="Szafa do przedpokoju z lustrem"
+              src="./img/wardrobe/szafa-do-przedpokoju-z-lustrem.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/wardrobe/szafa-przedpokoj-1.png"
+            data-lg-size="1600-2400"
+            class="wardrobe"
+          >
+            <img
+              alt="Szafa do przedpokoju granatowa"
+              src="./img/wardrobe/szafa-przedpokoj-1.png"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/wardrobe/garderoba-szara-1.png"
+            data-lg-size="1024-800"
+            class="wardrobe"
+          >
+            <img
+              alt="Garderoba w kolorze szarym"
+              src="./img/wardrobe/garderoba-szara-1.png"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/wardrobe/garderoba-szara-2.png"
+            data-lg-size="1024-800"
+            class="wardrobe"
+          >
+            <img
+              alt="Garderoba w kolorze szarym (wnętrz)"
+              src="./img/wardrobe/garderoba-szara-2.png"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/wardrobe/szafa-przedpokoj-bezowa.png"
+            data-lg-size="1600-2400"
+            class="wardrobe"
+          >
+            <img
+              alt="Szafa do przedpokoju beżowa"
+              src="./img/wardrobe/szafa-przedpokoj-bezowa.png"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/attic/zabudowa-schodow.png"
+            data-lg-size="1024-800"
+            class="attic"
+          >
+            <img
+              alt="Zabudowa pod schodami"
+              src="./img/attic/zabudowa-schodow.png"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/bathroom/szafka-lazienkowa-biala.jpg"
+            data-lg-size="1024-800"
+            class="bathroom"
+          >
+            <img
+              alt="Szafka łazienkowa biała"
+              src="./img/bathroom/szafka-lazienkowa-biala.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/bathroom/szafka-pod-umywalke-1.jpg"
+            data-lg-size="1024-800"
+            class="bathroom"
+          >
+            <img
+              alt="Szafka pod umywalkę"
+              src="./img/bathroom/szafka-pod-umywalke-1.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/bathroom/szafka-pod-umywalke-2.jpg"
+            data-lg-size="1024-800"
+            class="bathroom"
+          >
+            <img
+              alt="Szafka pod umywalkę"
+              src="./img/bathroom/szafka-pod-umywalke-2.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/unusual/szafa-z-RTV.png"
+            data-lg-size="1024-800"
+            class="unusual"
+          >
+            <img
+              alt="Meblościanka z szafką RTV"
+              src="./img/unusual/szafa-z-RTV.png"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/unusual/garderoba-ze-szklanymi-drzwiami.png"
+            data-lg-size="1024-800"
+            class="unusual"
+          >
+            <img
+              alt="Garderoba ze szklanymi drzwiami"
+              src="./img/unusual/garderoba-ze-szklanymi-drzwiami.png"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/wardrobe/szafa-wnekowa-biala.png"
+            data-lg-size="1600-2400"
+            class="wardrobe"
+          >
+            <img
+              alt="Meblościanka biała"
+              src="./img/wardrobe/szafa-wnekowa-biala.png"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/wardrobe/garderoba-biala-1.jpg"
+            data-lg-size="1024-800"
+            class="wardrobe"
+          >
+            <img
+              alt="Garderoba w kolorze białym"
+              src="./img/wardrobe/garderoba-biala-1.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/wardrobe/garderoba-biala-2.jpg"
+            data-lg-size="1024-800"
+            class="wardrobe"
+          >
+            <img
+              alt="Garderoba biała"
+              src="./img/wardrobe/garderoba-biala-2.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/children/biurko-dzieciece.jpg"
+            data-lg-size="1024-800"
+            class="children"
+          >
+            <img
+              alt="Biurko dziecięce białe"
+              src="./img/children/biurko-dzieciece.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/children/meble-dzieciece-biale.jpg"
+            data-lg-size="1024-800"
+            class="children"
+          >
+            <img
+              alt="Meble dziecięce białe"
+              src="./img/children/meble-dzieciece-biale.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/children/polka-na-ksiazki.jpg"
+            data-lg-size="1024-800"
+            class="children"
+          >
+            <img
+              alt="Półka na książki"
+              src="./img/children/polka-na-ksiazki.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/unusual/szafka-pod-rtv.jpg"
+            data-lg-size="1024-800"
+            class="unusual"
+          >
+            <img
+              alt="Szafki wiszące"
+              src="./img/unusual/szafka-pod-rtv.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/bathroom/szafka-lazienkowa-2.jpg"
+            data-lg-size="1024-800"
+            class="bathroom"
+          >
+            <img
+              alt="Szafka pod umywalkę"
+              src="./img/bathroom/szafka-lazienkowa-2.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/bathroom/szafka-lazienkowa-1.jpg"
+            data-lg-size="1024-800"
+            class="bathroom"
+          >
+            <img
+              alt="Szafka umywalkowa czarno-biała"
+              src="./img/bathroom/szafka-lazienkowa-1.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/bathroom/szafka-pod-umywalke-biala.jpg"
+            data-lg-size="1024-800"
+            class="bathroom"
+          >
+            <img
+              alt="Szafka umywalkowa biała"
+              src="./img/bathroom/szafka-pod-umywalke-biala.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/office/biurko-do-gabinetu.jpg"
+            data-lg-size="1024-800"
+            class="office"
+          >
+            <img
+              alt="Biurko do gabinetu"
+              src="./img/office/biurko-do-gabinetu.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/office/meble-biurowe-1.jpg"
+            data-lg-size="1024-800"
+            class="office"
+          >
+            <img
+              alt="Meble do biura"
+              src="./img/office/meble-biurowe-1.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/office/meble-biurowe-2.jpg"
+            data-lg-size="1024-800"
+            class="office"
+          >
+            <img
+              alt="Meble biurowe"
+              src="./img/office/meble-biurowe-2.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/office/komoda-1.jpg"
+            data-lg-size="1600-2400"
+            class="office"
+          >
+            <img alt="Komoda" src="./img/office/komoda-1.jpg" loading="lazy" />
+          </a>
+          <a
+            href="./img/attic/garderoba-na-poddaszu.jpg"
+            data-lg-size="1024-800"
+            class="attic"
+          >
+            <img
+              alt="Meblościanka na poddaszu ze skosem"
+              src="./img/attic/garderoba-na-poddaszu.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/attic/garderoba-na-poddaszu-2.jpg"
+            data-lg-size="1024-800"
+            class="attic"
+          >
+            <img
+              alt="Garderoba na poddaszu ze skosem"
+              src="./img/attic/garderoba-na-poddaszu-2.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/attic/zabudowa-skosow-2.jpg"
+            data-lg-size="1024-800"
+            class="attic"
+          >
+            <img
+              alt="Garderoba na poddaszu ze skosem 2"
+              src="./img/attic/zabudowa-skosow-2.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/attic/zabudowa-skosow.jpg"
+            data-lg-size="1024-800"
+            class="attic"
+          >
+            <img
+              alt="Zabudowa skosów"
+              src="./img/attic/zabudowa-skosow.jpg"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="./img/attic/zabudowa-skosow-czerwona.jpg"
+            data-lg-size="1024-800"
+            class="attic"
+          >
+            <img
+              alt="Meblościanka na poddaszu ze skosem czerwona"
+              src="./img/attic/zabudowa-skosow-czerwona.jpg"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </div>
     </section>
 
     <footer class="page-footer">
-        <div class="footer-top">
-            <nav class="footer-nav navbar-nav footer-font-size">
-                <ul class="nav flex-column">
-                    <li class="menu-item nav-item"><a class="nav-link" href="./">Strona główna</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link" href="./o-nas.html">O nas</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link" href="./oferta.html">Oferta</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link active" href="./galeria.html">Galeria</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link" href="./kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
-            <article class="text-container">
-                <h3>F.H.U. BEL-MEB</h3>
-                <address>
-                    <p class="footer-font-size">Kobierzyńska 54</p>
-                    <p class="footer-font-size">30-382 Kraków</p>
-                    <p class="footer-font-size">tel:<a href="tel:+48602321810" class="link-footer footer-font-size">602 321 810</a>i<a href="tel:+48575408007" class="link-footer footer-font-size">575 408 007</a></p>
-                    <p class="footer-font-size">email:<a href="mailto:info@bel-meb.pl" class="link-footer footer-font-size">info@bel-meb.pl</a></p>
-                </address>
-            </article>
-            <div class="logo-footer">
-                <img src="./img/logo_belmeb-300x100.png" alt="logo">
-            </div>
+      <div class="footer-top">
+        <nav class="footer-nav navbar-nav footer-font-size">
+          <ul class="nav flex-column">
+            <li class="menu-item nav-item">
+              <a class="nav-link" href="./">Strona główna</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a class="nav-link" href="./o-nas.html">O nas</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a class="nav-link" href="./oferta.html">Oferta</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a class="nav-link active" href="./galeria.html">Galeria</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a class="nav-link" href="./kontakt.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <article class="text-container">
+          <h3>F.H.U. BEL-MEB</h3>
+          <address>
+            <p class="footer-font-size">Kobierzyńska 54</p>
+            <p class="footer-font-size">30-382 Kraków</p>
+            <p class="footer-font-size">
+              tel:<a
+                href="tel:+48602321810"
+                class="link-footer footer-font-size"
+                >602 321 810</a
+              >i<a href="tel:+48575408007" class="link-footer footer-font-size"
+                >575 408 007</a
+              >
+            </p>
+            <p class="footer-font-size">
+              email:<a
+                href="mailto:info@bel-meb.pl"
+                class="link-footer footer-font-size"
+                >info@bel-meb.pl</a
+              >
+            </p>
+          </address>
+        </article>
+        <div class="logo-footer">
+          <img src="./img/logo_belmeb-300x100.png" alt="logo" />
         </div>
-        <div class="footer-bottom">
-            <a href="./polityka-prywatnosci.html" class="link-footer footer-font-size">Polityka prywatnośći</a>
-            <p class="copy footer-font-size">&copy Projekt i realizacja 2023</p>
-        </div>
+      </div>
+      <div class="footer-bottom">
+        <a
+          href="./polityka-prywatnosci.html"
+          class="link-footer footer-font-size"
+          >Polityka prywatnośći</a
+        >
+        <p class="copy footer-font-size">&copy; Projekt i realizacja 2023</p>
+      </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/97ace15257.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script
+      async
+      src="https://kit.fontawesome.com/97ace15257.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js" integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/fullscreen/lg-fullscreen.min.js" integrity="sha512-11B0rPDzvnSOYzAT37QdnYgt0z9Xg+wX5tckB1QKl5Znl8RPvrB5npo38K2jCt+Ad44udCfBiKt9D4jRdkSE1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js" integrity="sha512-BLW2Jrofiqm6m7JhkQDIh2olT0EBI58+hIL/AXWvo8gOXKmsNlU6myJyEkTy6rOAAZjn0032FRk8sl9RgXPYIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js" integrity="sha512-VBbe8aA3uiK90EUKJnZ4iEs0lKXRhzaAXL8CIHWYReUwULzxkOSxlNixn41OLdX0R1KNP23/s76YPyeRhE6P+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="./js/gallery.js"></script>
-    <script src="./js/smooth-scroll.js"></script>
-</body>
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"
+      integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/fullscreen/lg-fullscreen.min.js"
+      integrity="sha512-11B0rPDzvnSOYzAT37QdnYgt0z9Xg+wX5tckB1QKl5Znl8RPvrB5npo38K2jCt+Ad44udCfBiKt9D4jRdkSE1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"
+      integrity="sha512-BLW2Jrofiqm6m7JhkQDIh2olT0EBI58+hIL/AXWvo8gOXKmsNlU6myJyEkTy6rOAAZjn0032FRk8sl9RgXPYIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"
+      integrity="sha512-VBbe8aA3uiK90EUKJnZ4iEs0lKXRhzaAXL8CIHWYReUwULzxkOSxlNixn41OLdX0R1KNP23/s76YPyeRhE6P+Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      async
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script async src="./js/gallery.js"></script>
+    <script async src="./js/smooth-scroll.js"></script>
+  </body>
 </html>

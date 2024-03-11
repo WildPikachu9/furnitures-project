@@ -1,185 +1,384 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dowiedz się więcej o naszej różnorodnej ofercie mebli na wymiar. Od kuchni po biura, nasze projekty łączą funkcjonalność z estetyką, tworząc wyjątkowe przestrzenie. Znajdź idealne rozwiązania dla każdej przestrzeni w naszej zróżnicowanej ofercie."
+    />
     <title>Meble na wymiar w Krakowie - BEL-MEB</title>
     <link rel="icon" type="image/x-icon" href="./img/bel-meb-ico.png" />
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <nav id="nav" class="navbar navbar-expand-md bg-body-tertiary">
-        <div class="container-fluid">
-            <a href="./o-nas.html" class="brand"><img src="./img/logo_belmeb-300x100.png" alt="logo-txt"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <hr />
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./">STRONA GŁÓWNA</a>
+      <div class="container-fluid">
+        <a href="./o-nas.html" class="brand"
+          ><img src="./img/logo_belmeb-300x100.png" alt="logo-txt"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <hr />
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./"
+                >STRONA GŁÓWNA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./o-nas.html">O NAS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >OFERTA</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./oferta/meble-kuchenne-na-wymiar.html"
+                    >Meble kuchenne na wymiar</a
+                  >
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./o-nas.html">O NAS</a>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./oferta/szafy-wnekowe-garderoby.html"
+                    >Szafy wnękowe i garderoby</a
+                  >
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">OFERTA</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./oferta/meble-kuchenne-na-wymiar.html">Meble kuchenne na wymiar</a></li>
-                        <li><a class="dropdown-item" href="./oferta/szafy-wnekowe-garderoby.html">Szafy wnękowe i garderoby</a></li>
-                        <li><a class="dropdown-item" href="./oferta/meble-lazienkowe.html">Meble łazienkowe</a></li>
-                        <li><a class="dropdown-item" href="./oferta/meble-biurowe.html">Meble biurowe</a></li>
-                        <li><a class="dropdown-item" href="./oferta/zabudowy-skosow-poddaszy.html">Zabudowy skosów / poddaszy</a></li>
-                        <li><a class="dropdown-item" href="./oferta/meble-dzieciece-i-mlodziezowe.html">Meble dziecięce i młodzieżowe</a></li>
-                        <li><a class="dropdown-item" href="./oferta/nietypowe-meble-na-wymiar.html">Nietypowe meble na wymiar</a></li>
-                    </ul>
+                <li>
+                  <a class="dropdown-item" href="./oferta/meble-lazienkowe.html"
+                    >Meble łazienkowe</a
+                  >
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./galeria.html">GALERIA</a>
+                <li>
+                  <a class="dropdown-item" href="./oferta/meble-biurowe.html"
+                    >Meble biurowe</a
+                  >
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./kontakt.html">KONTAKT</a>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./oferta/zabudowy-skosow-poddaszy.html"
+                    >Zabudowy skosów / poddaszy</a
+                  >
                 </li>
-                </ul>
-            </div>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./oferta/meble-dzieciece-i-mlodziezowe.html"
+                    >Meble dziecięce i młodzieżowe</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./oferta/nietypowe-meble-na-wymiar.html"
+                    >Nietypowe meble na wymiar</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./galeria.html">GALERIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./kontakt.html">KONTAKT</a>
+            </li>
+          </ul>
         </div>
-        <div class="arrow-up-container">
-            <a class="arrow-up hash" href="#nav"><i class="fa fa-angles-up"></i></a>
-        </div>
+      </div>
+      <div class="arrow-up-container">
+        <a
+          class="arrow-up hash"
+          href="#nav"
+          aria-label="Przejdź do menu nawigacyjnego"
+          ><i class="fa fa-angles-up"></i
+        ></a>
+      </div>
     </nav>
 
     <header class="header common-header">
-        <div class="header-image d-block w-100" style="background-image: url(./img/header1.png);">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcrumb-container">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item available-link"><a href="./">Strona główna</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Oferta</li>
-                </ol>
-            </nav>
-        </div>
+      <div
+        class="header-image d-block w-100"
+        style="background-image: url(./img/header1.png)"
+      >
+        <nav
+          style="--bs-breadcrumb-divider: '>'"
+          aria-label="breadcrumb"
+          class="breadcrumb-container"
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item available-link">
+              <a href="./">Strona główna</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Oferta</li>
+          </ol>
+        </nav>
+      </div>
     </header>
 
     <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Meble na wymiar - oferta</h2>
-                <hr class="offers-hr"/>
-                <p>Jako <strong>producent&nbsp;mebli&nbsp;na&nbsp;wymiar</strong>, z dumą prezentujemy naszą szeroką i zróżnicowaną ofertę, której celem jest pełne zaspokojenie Twoich oczekiwań. W naszej pracy kładziemy nacisk na używanie&nbsp;materiałów&nbsp;najwyższej&nbsp;jakości, a do produkcji naszych mebli <strong>stosujemy solidne&nbsp;płyty&nbsp;laminowane</strong>.</p>
-                <p><strong>Nasza oferta obejmuje:</strong></p>
-                <ul class="offers-list">
-                    <li class="offer-item">Meble&nbsp;na&nbsp;zamówienie do kuchni (nowoczesne i klasyczne).</li>
-                    <li class="offer-item">Meble&nbsp;do&nbsp;łazienek dostosowane&nbsp;do&nbsp;specyfiki&nbsp;pomieszczenia.</li>
-                    <li class="offer-item">Szafy&nbsp;wnękowe z różnorodnymi rodzajami drzwi.</li>
-                    <li class="offer-item">Drzwi&nbsp;podwieszane (bezramowe, szklane, aluminiowe).</li>
-                    <li class="offer-item">Garderoby&nbsp;i&nbsp;szafy&nbsp;do&nbsp;zabudowy.</li>
-                    <li class="offer-item">Meble&nbsp;do&nbsp;salonu.</li>
-                    <li class="offer-item">Meble&nbsp;do&nbsp;sypialni.</li>
-                    <li class="offer-item">Meble&nbsp;do&nbsp;biur / gabinetów.</li>
-                    <li class="offer-item">Zabudowa&nbsp;skosów&nbsp;na&nbsp;poddaszach.</li>
-                    <li class="offer-item">Drzwi&nbsp;wewnętrzne (klasyczne i przesuwane).</li>
-                    <li class="offer-item">Meble&nbsp;dziecięce i młodzieżowe, dostosowane do różnych potrzeb i gustów.</li>
-                    <li class="offer-item">Inne praktyczne rozwiązania.</li>
-                </ul>
-                <p><strong>Dodatkowo oferujemy:</strong></p>
-                <ul class="offers-list">
-                    <li class="offer-item">Naprawę&nbsp;mebli, aby przedłużyć ich żywotność i przywrócić funkcjonalność.</li>
-                </ul>
-                <p>Masz pytania? Jesteśmy do Twojej dyspozycji. Chętnie stworzymy dla Ciebie meble&nbsp;dostosowane do Twoich marzeń o idealnym&nbsp;wnętrzu.</p>
-            </div>
-            <div class="row">
-                <a href="./oferta/meble-kuchenne-na-wymiar.html" class="service col col-md-50p col-lg-25p">
-                    <img src="./img/kitchen/kuchnia-biala.png" alt="Meble kuchenne na wymiar">
-                    <div class="service-overlay">
-                        <h3>Meble kuchenne na wymiar</h3>
-                    </div>
-                </a>
-                <a href="./oferta/szafy-wnekowe-garderoby.html" class="service col col-md-50p col-lg-25p">
-                    <img src="./img/wardrobe/mebloscianka-biala-z-lozkiem.jpg" alt="Szafy wnękowe i garderoby">
-                    <div class="service-overlay">
-                        <h3>Szafy wnękowe i garderoby</h3>
-                    </div>
-                </a>
-                <a href="./oferta/meble-lazienkowe.html" class="service col col-md-50p col-lg-25p">
-                    <img src="./img/bathroom-main.jpg" alt="Meble łazienkowe">
-                    <div class="service-overlay">
-                        <h3>Meble łazienkowe</h3>
-                    </div> 
-                </a>
-                <a href="./oferta/meble-biurowe.html" class="service col col-md-50p col-lg-25p">
-                    <img src="./img/office-main.jpg" alt="Meble biurowe">
-                    <div class="service-overlay">
-                        <h3>Meble biurowe</h3>
-                    </div>
-                </a>
-                <a href="./oferta/zabudowy-skosow-poddaszy.html" class="service col col-md-50p col-lg-25p">
-                    <img src="./img/attic/garderoba-na-poddaszu.jpg" alt="Zabudowy skosów / poddaszy">
-                    <div class="service-overlay">
-                        <h3>Zabudowy skosów / poddaszy</h3>
-                    </div>
-                </a>
-                <a href="./oferta/meble-dzieciece-i-mlodziezowe.html" class="service col col-md-50p col-lg-25p">
-                    <img src="./img/children-main.jpg" alt="Meble dziecięce i młodzieżowe">
-                    <div class="service-overlay">
-                        <h3>Meble dziecięce i młodzieżowe</h3>
-                    </div>
-                </a>
-                <a href="./oferta/nietypowe-meble-na-wymiar.html" class="service col col-md-50p col-lg-25p">
-                    <img src="./img/wardrobe-main.jpg" alt="Nietypowe meble na wymiar">
-                    <div class="service-overlay">
-                        <h3>Nietypowe meble na wymiar</h3>
-                    </div>
-                </a>
-            </div>
-            <article>
-                <h2><strong>Zapewniamy:</strong></h2>
-                <ul class="offers-list">
-                    <li class="offer-item">Bezpłatne&nbsp;projekty.</li>
-                    <li class="offer-item">Bezpłatną&nbsp;wycenę&nbsp;i&nbsp;konsultację.</li>
-                    <li class="offer-item">Bezpłatny&nbsp;transport na terenie miasta&nbsp;Krakowa.</li>
-                    <li class="offer-item">Profesjonalny&nbsp;montaż&nbsp;mebli u Klienta.</li>
-                    <li class="offer-item">Serwis&nbsp;gwarancyjny i pogwarancyjny.</li>
-                    <li class="offer-item">Konkurencyjne ceny oraz możliwość negocjacji.</li>
-                </ul>
-                <p>Wszystkie oferowane przez nas meble objęte są 24-miesięczną gwarancją. W przypadku systemów jezdnych drzwi przesuwanych firmy Stanplus okres gwarancyjny wynosi aż 5 lat.</p>
-            </article>
+      <div class="container">
+        <div class="section-header">
+          <h2>Meble na wymiar - oferta</h2>
+          <hr class="offers-hr" />
+          <p>
+            Jako <strong>producent&nbsp;mebli&nbsp;na&nbsp;wymiar</strong>, z
+            dumą prezentujemy naszą szeroką i zróżnicowaną ofertę, której celem
+            jest pełne zaspokojenie Twoich oczekiwań. W naszej pracy kładziemy
+            nacisk na używanie&nbsp;materiałów&nbsp;najwyższej&nbsp;jakości, a
+            do produkcji naszych mebli
+            <strong>stosujemy solidne&nbsp;płyty&nbsp;laminowane</strong>.
+          </p>
+          <p><strong>Nasza oferta obejmuje:</strong></p>
+          <ul class="offers-list">
+            <li class="offer-item">
+              Meble&nbsp;na&nbsp;zamówienie do kuchni (nowoczesne i klasyczne).
+            </li>
+            <li class="offer-item">
+              Meble&nbsp;do&nbsp;łazienek
+              dostosowane&nbsp;do&nbsp;specyfiki&nbsp;pomieszczenia.
+            </li>
+            <li class="offer-item">
+              Szafy&nbsp;wnękowe z różnorodnymi rodzajami drzwi.
+            </li>
+            <li class="offer-item">
+              Drzwi&nbsp;podwieszane (bezramowe, szklane, aluminiowe).
+            </li>
+            <li class="offer-item">
+              Garderoby&nbsp;i&nbsp;szafy&nbsp;do&nbsp;zabudowy.
+            </li>
+            <li class="offer-item">Meble&nbsp;do&nbsp;salonu.</li>
+            <li class="offer-item">Meble&nbsp;do&nbsp;sypialni.</li>
+            <li class="offer-item">Meble&nbsp;do&nbsp;biur / gabinetów.</li>
+            <li class="offer-item">
+              Zabudowa&nbsp;skosów&nbsp;na&nbsp;poddaszach.
+            </li>
+            <li class="offer-item">
+              Drzwi&nbsp;wewnętrzne (klasyczne i przesuwane).
+            </li>
+            <li class="offer-item">
+              Meble&nbsp;dziecięce i młodzieżowe, dostosowane do różnych potrzeb
+              i gustów.
+            </li>
+            <li class="offer-item">Inne praktyczne rozwiązania.</li>
+          </ul>
+          <p><strong>Dodatkowo oferujemy:</strong></p>
+          <ul class="offers-list">
+            <li class="offer-item">
+              Naprawę&nbsp;mebli, aby przedłużyć ich żywotność i przywrócić
+              funkcjonalność.
+            </li>
+          </ul>
+          <p>
+            Masz pytania? Jesteśmy do Twojej dyspozycji. Chętnie stworzymy dla
+            Ciebie meble&nbsp;dostosowane do Twoich marzeń o
+            idealnym&nbsp;wnętrzu.
+          </p>
         </div>
+        <div class="row">
+          <a
+            href="./oferta/meble-kuchenne-na-wymiar.html"
+            class="service col col-md-50p col-lg-25p"
+          >
+            <img
+              src="./img/kitchen/kuchnia-biala.png"
+              alt="Meble kuchenne na wymiar"
+            />
+            <div class="service-overlay">
+              <h3>Meble kuchenne na wymiar</h3>
+            </div>
+          </a>
+          <a
+            href="./oferta/szafy-wnekowe-garderoby.html"
+            class="service col col-md-50p col-lg-25p"
+          >
+            <img
+              src="./img/wardrobe/mebloscianka-biala-z-lozkiem.jpg"
+              alt="Szafy wnękowe i garderoby"
+            />
+            <div class="service-overlay">
+              <h3>Szafy wnękowe i garderoby</h3>
+            </div>
+          </a>
+          <a
+            href="./oferta/meble-lazienkowe.html"
+            class="service col col-md-50p col-lg-25p"
+          >
+            <img src="./img/bathroom-main.jpg" alt="Meble łazienkowe" />
+            <div class="service-overlay">
+              <h3>Meble łazienkowe</h3>
+            </div>
+          </a>
+          <a
+            href="./oferta/meble-biurowe.html"
+            class="service col col-md-50p col-lg-25p"
+          >
+            <img src="./img/office-main.jpg" alt="Meble biurowe" />
+            <div class="service-overlay">
+              <h3>Meble biurowe</h3>
+            </div>
+          </a>
+          <a
+            href="./oferta/zabudowy-skosow-poddaszy.html"
+            class="service col col-md-50p col-lg-25p"
+          >
+            <img
+              src="./img/attic/garderoba-na-poddaszu.jpg"
+              alt="Zabudowy skosów / poddaszy"
+            />
+            <div class="service-overlay">
+              <h3>Zabudowy skosów / poddaszy</h3>
+            </div>
+          </a>
+          <a
+            href="./oferta/meble-dzieciece-i-mlodziezowe.html"
+            class="service col col-md-50p col-lg-25p"
+          >
+            <img
+              src="./img/children-main.jpg"
+              alt="Meble dziecięce i młodzieżowe"
+            />
+            <div class="service-overlay">
+              <h3>Meble dziecięce i młodzieżowe</h3>
+            </div>
+          </a>
+          <a
+            href="./oferta/nietypowe-meble-na-wymiar.html"
+            class="service col col-md-50p col-lg-25p"
+          >
+            <img
+              src="./img/wardrobe-main.jpg"
+              alt="Nietypowe meble na wymiar"
+            />
+            <div class="service-overlay">
+              <h3>Nietypowe meble na wymiar</h3>
+            </div>
+          </a>
+        </div>
+        <article>
+          <h2><strong>Zapewniamy:</strong></h2>
+          <ul class="offers-list">
+            <li class="offer-item">Bezpłatne&nbsp;projekty.</li>
+            <li class="offer-item">
+              Bezpłatną&nbsp;wycenę&nbsp;i&nbsp;konsultację.
+            </li>
+            <li class="offer-item">
+              Bezpłatny&nbsp;transport na terenie miasta&nbsp;Krakowa.
+            </li>
+            <li class="offer-item">
+              Profesjonalny&nbsp;montaż&nbsp;mebli u Klienta.
+            </li>
+            <li class="offer-item">Serwis&nbsp;gwarancyjny i pogwarancyjny.</li>
+            <li class="offer-item">
+              Konkurencyjne ceny oraz możliwość negocjacji.
+            </li>
+          </ul>
+          <p>
+            Wszystkie oferowane przez nas meble objęte są 24-miesięczną
+            gwarancją. W przypadku systemów jezdnych drzwi przesuwanych firmy
+            Stanplus okres gwarancyjny wynosi aż 5 lat.
+          </p>
+        </article>
+      </div>
     </section>
 
     <footer class="page-footer">
-        <div class="footer-top">
-            <nav class="footer-nav navbar-nav footer-font-size">
-                <ul class="nav flex-column">
-                    <li class="menu-item nav-item"><a class="nav-link" href="./">Strona główna</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link" href="./o-nas.html">O nas</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link active" href="./oferta.html">Oferta</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link" href="./galeria.html">Galeria</a></li>
-                    <li class="menu-item nav-item"><a class="nav-link" href="./kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
-            <article class="text-container">
-                <h3>F.H.U. BEL-MEB</h3>
-                <address>
-                    <p class="footer-font-size">Kobierzyńska 54</p>
-                    <p class="footer-font-size">30-382 Kraków</p>
-                    <p class="footer-font-size">tel:<a href="tel:+48602321810" class="link-footer footer-font-size">602 321 810</a>i<a href="tel:+48575408007" class="link-footer footer-font-size">575 408 007</a></p>
-                    <p class="footer-font-size">email:<a href="mailto:info@bel-meb.pl" class="link-footer footer-font-size">info@bel-meb.pl</a></p>
-                </address>
-            </article>
-            <div class="logo-footer">
-                <img src="./img/logo_belmeb-300x100.png" alt="logo">
-            </div>
+      <div class="footer-top">
+        <nav class="footer-nav navbar-nav footer-font-size">
+          <ul class="nav flex-column">
+            <li class="menu-item nav-item">
+              <a class="nav-link" href="./">Strona główna</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a class="nav-link" href="./o-nas.html">O nas</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a class="nav-link active" href="./oferta.html">Oferta</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a class="nav-link" href="./galeria.html">Galeria</a>
+            </li>
+            <li class="menu-item nav-item">
+              <a class="nav-link" href="./kontakt.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <article class="text-container">
+          <h3>F.H.U. BEL-MEB</h3>
+          <address>
+            <p class="footer-font-size">Kobierzyńska 54</p>
+            <p class="footer-font-size">30-382 Kraków</p>
+            <p class="footer-font-size">
+              tel:<a
+                href="tel:+48602321810"
+                class="link-footer footer-font-size"
+                >602 321 810</a
+              >i<a href="tel:+48575408007" class="link-footer footer-font-size"
+                >575 408 007</a
+              >
+            </p>
+            <p class="footer-font-size">
+              email:<a
+                href="mailto:info@bel-meb.pl"
+                class="link-footer footer-font-size"
+                >info@bel-meb.pl</a
+              >
+            </p>
+          </address>
+        </article>
+        <div class="logo-footer">
+          <img src="./img/logo_belmeb-300x100.png" alt="logo" />
         </div>
-        <div class="footer-bottom">
-            <a href="./polityka-prywatnosci.html" class="link-footer footer-font-size">Polityka prywatnośći</a>
-            <p class="copy footer-font-size">&copy Projekt i realizacja 2023</p>
-        </div>
+      </div>
+      <div class="footer-bottom">
+        <a
+          href="./polityka-prywatnosci.html"
+          class="link-footer footer-font-size"
+          >Polityka prywatnośći</a
+        >
+        <p class="copy footer-font-size">&copy Projekt i realizacja 2023</p>
+      </div>
     </footer>
-    <script src="https://kit.fontawesome.com/97ace15257.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/97ace15257.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/smooth-scroll.js"></script>
-</body>
+  </body>
 </html>
