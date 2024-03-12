@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 @import "https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-fullscreen.min.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-zoom.min.css";
@@ -379,7 +380,8 @@ input[type=checkbox], input[type=radio] {
 .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
   background-color: rgb(36, 164, 197);
 }
-.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item.active, .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:active {
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item.active,
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:active {
   background-color: rgb(36, 164, 197);
 }
 .navbar .arrow-up-container {
@@ -388,15 +390,15 @@ input[type=checkbox], input[type=radio] {
   right: 25px;
   z-index: 10;
 }
-.navbar .arrow-up-container i {
+.navbar .arrow-up-container svg {
   padding: 10px;
-  border: 2px solid rgb(36, 164, 197);
+  border: 1px solid rgb(36, 164, 197);
   border-radius: 50%;
-  font-size: 26px;
-  color: rgb(36, 164, 197);
+  width: 50px;
+  height: 50px;
   transition: all 0.3s;
 }
-.navbar .arrow-up-container i:hover {
+.navbar .arrow-up-container svg:hover {
   background-color: rgba(47, 43, 43, 0.068);
 }
 
@@ -465,17 +467,16 @@ input[type=checkbox], input[type=radio] {
   transform: translateX(-50%);
   z-index: 10;
 }
-.header .carousel .carousel-inner .angles-down i {
+.header .carousel .carousel-inner .angles-down svg {
   padding: 10px;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   border-radius: 50%;
-  font-size: 26px;
-  color: #fff;
+  width: 50px;
+  height: 50px;
   transition: all 0.3s;
 }
-.header .carousel .carousel-inner .angles-down i:hover {
+.header .carousel .carousel-inner .angles-down svg:hover {
   border-color: rgb(36, 164, 197);
-  color: rgb(36, 164, 197);
 }
 @media all and (min-width: 768px) {
   .header .carousel .carousel-inner .carousel-item .d-block {
@@ -518,7 +519,8 @@ input[type=checkbox], input[type=radio] {
 .common-header .header-image .breadcrumb-container .breadcrumb .available-link a:hover {
   text-decoration: underline;
 }
-.common-header .header-image .breadcrumb-container .breadcrumb .active, .common-header .header-image .breadcrumb-container .breadcrumb .breadcrumb-item::before {
+.common-header .header-image .breadcrumb-container .breadcrumb .active,
+.common-header .header-image .breadcrumb-container .breadcrumb .breadcrumb-item::before {
   color: #fff;
 }
 @media all and (min-width: 768px) {
@@ -765,10 +767,10 @@ input[type=checkbox], input[type=radio] {
 .contact .container .row .contact-data .contact-item .img-holder {
   margin-right: 10px;
   width: 15%;
-  color: rgb(36, 164, 197);
 }
-.contact .container .row .contact-data .contact-item .img-holder i {
-  font-size: 25px;
+.contact .container .row .contact-data .contact-item .img-holder svg {
+  width: 25px;
+  height: 25px;
 }
 .contact .container .row .contact-data .contact-item .col h3 {
   color: #000;
