@@ -1,26 +1,29 @@
 .about-us {
-    .container {
-        .section-header {
-            .container-image {
-                max-width: 100%;
-                img {
-                    width: 100%;
-                }
-            }
+  .container {
+    .section-header {
+      .link-to-offers {
+        font-size: $baseline + 4px;
+      }
+      .container-image {
+        max-width: 100%;
+        img {
+          width: 100%;
         }
-        
-        @media all and (min-width: $large) {
-            padding: 0;
-            justify-content: space-between;
-            .section-header {
-                margin: 0 50px;
-                .info-container {
-                    max-width: 54%;
-                }
-                .container-image {
-                    max-width: 44%;
-                }
-            }
+      }
+    }
+
+    @media all and (min-width: $large) {
+      padding: 0;
+      justify-content: space-between;
+      .section-header {
+        margin: 0 50px;
+        .info-container {
+          max-width: 54%;
         }
-    }  
+        .container-image {
+          max-width: 44%;
+        }
+      }
+    }
+  }
 }

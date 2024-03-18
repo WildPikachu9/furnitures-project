@@ -1,26 +1,30 @@
-
 .gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
 
-    a {
-        margin: 20px;
-        height: 200px;
-        width: 300px;
-        overflow: hidden;
+  a {
+    margin: 20px;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
 
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            transition: all 0.3s;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.3s;
 
-            &:hover {
-                transform: scale(1.4);
-                cursor: zoom-in;
-            }
-        }
+      &:hover {
+        transform: scale(1.4);
+        cursor: zoom-in;
+      }
     }
+  }
+}
+
+.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item:hover {
+  border-color: $button-color;
 }

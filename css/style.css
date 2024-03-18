@@ -2,10 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
-@import "https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css";
-@import "https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-fullscreen.min.css";
-@import "https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-zoom.min.css";
-@import "https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css";
 * {
   box-sizing: border-box;
 }
@@ -23,7 +19,12 @@ body {
   margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Lato", sans-serif;
   color: #6a6a6a;
 }
@@ -730,6 +731,9 @@ input[type=checkbox], input[type=radio] {
   }
 }
 
+.about-us .container .section-header .link-to-offers {
+  font-size: 20px;
+}
 .about-us .container .section-header .container-image {
   max-width: 100%;
 }
@@ -799,11 +803,11 @@ input[type=checkbox], input[type=radio] {
     flex-basis: 50%;
   }
 }
-.contact a {
-  color: rgb(36, 164, 197);
-}
 .contact a:hover {
   text-decoration: underline;
+}
+.contact .form-check a {
+  font-weight: 600;
 }
 
 .page-footer {
@@ -876,7 +880,7 @@ input[type=checkbox], input[type=radio] {
 }
 
 a {
-  color: #000;
+  color: rgb(63, 63, 63);
   transition: all 0.3s;
 }
 a:hover {
@@ -1054,14 +1058,13 @@ ul {
   border: 0;
   border-bottom: 1px solid rgb(36, 164, 197);
   border-radius: 0;
-  color: rgb(36, 164, 197);
   background-color: rgb(248, 249, 250);
 }
 .form-control:focus-visible {
   border-color: rgb(36, 164, 197);
 }
 .form-control::-webkit-input-placeholder {
-  color: rgb(36, 164, 197);
+  font-weight: 600;
 }
 .form-control::-moz-placeholder {
   color: rgb(36, 164, 197);
@@ -1133,4 +1136,9 @@ textarea {
 .gallery a img:hover {
   transform: scale(1.4);
   cursor: zoom-in;
+}
+
+.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item:hover {
+  border-color: rgb(36, 164, 197);
 }/*# sourceMappingURL=style.css.map */

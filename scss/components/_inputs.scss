@@ -1,72 +1,71 @@
 .form-control {
-    display: inline-block;
-    padding: 15px;
-    margin-bottom: 15px;
-    width: 100%;
-    border: 0;
-    border-bottom: 1px solid $button-color;
-    border-radius: 0;
+  display: inline-block;
+  padding: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid $button-color;
+  border-radius: 0;
+  background-color: $primary-color;
+
+  &:focus-visible {
+    border-color: $button-color;
+  }
+
+  &::-webkit-input-placeholder {
+    font-weight: 600;
+  }
+
+  &::-moz-placeholder {
     color: $button-color;
-    background-color: $primary-color;
+  }
 
-    &:focus-visible {
-        border-color: $button-color;
-    }
+  &:-ms-input-placeholder {
+    color: $button-color;
+  }
 
-    &::-webkit-input-placeholder {
-        color: $button-color;
-    }
-
-    &::-moz-placeholder {
-        color: $button-color;
-    }
-
-    &:-ms-input-placeholder {
-        color: $button-color;
-    }
-    
-    &:-moz-placeholder {
-        color: $button-color;
-    }
+  &:-moz-placeholder {
+    color: $button-color;
+  }
 }
 
-.form-control.is-valid, 
+.form-control.is-valid,
 .was-validated .form-control:valid,
 .was-validated .form-control:valid:focus {
-    border-color:  $button-color;
+  border-color: $button-color;
 }
 
 .was-validated .form-control:valid:focus,
 .was-validated .form-check.form-check-input:focus:checked {
-    box-shadow: $input-box-shadow;
+  box-shadow: $input-box-shadow;
 }
 
-.form-check-input.is-valid:checked, 
+.form-check-input.is-valid:checked,
 .was-validated .form-check-input:valid:checked {
-    background-color: $button-color;
-    box-shadow: $input-box-shadow;
+  background-color: $button-color;
+  box-shadow: $input-box-shadow;
 }
 
-.form-check-input.is-valid~.form-check-label,
-.was-validated .form-check-input:valid~.form-check-label,
-.form-check-input.is-invalid~.form-check-label, 
-.was-validated .form-check-input:invalid~.form-check-label {
-    color: $primary-text-color;
+.form-check-input.is-valid ~ .form-check-label,
+.was-validated .form-check-input:valid ~ .form-check-label,
+.form-check-input.is-invalid ~ .form-check-label,
+.was-validated .form-check-input:invalid ~ .form-check-label {
+  color: $primary-text-color;
 }
 
 textarea {
-    height: 100px;
+  height: 100px;
 }
 
 .form-check {
-    .form-check-input:checked {
-        background-color: $button-color;
-        border-color: $button-color;
-        &:focus-visible {
-            border-color: $button-color;
-        }
+  .form-check-input:checked {
+    background-color: $button-color;
+    border-color: $button-color;
+    &:focus-visible {
+      border-color: $button-color;
     }
-    .form-check-label {
-        font-size: $baseline - 5px;
-    }
+  }
+  .form-check-label {
+    font-size: $baseline - 5px;
+  }
 }

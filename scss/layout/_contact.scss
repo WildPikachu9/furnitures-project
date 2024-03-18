@@ -50,10 +50,11 @@
       }
     }
   }
-  a {
-    color: $button-color;
-    &:hover {
-      text-decoration: underline;
-    }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .form-check a {
+    font-weight: 600;
   }
 }
