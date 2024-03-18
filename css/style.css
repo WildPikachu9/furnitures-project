@@ -826,6 +826,7 @@ input[type=checkbox], input[type=radio] {
 }
 .page-footer .footer-top .footer-nav .active {
   color: rgb(36, 164, 197);
+  font-weight: bold;
 }
 .page-footer .footer-top .text-container {
   padding: 10px 0;
@@ -842,7 +843,7 @@ input[type=checkbox], input[type=radio] {
   color: rgb(248, 249, 250);
 }
 .page-footer .footer-font-size {
-  font-size: 13px;
+  font-size: 16px;
 }
 .page-footer .link-footer {
   margin: 0 5px;
@@ -870,18 +871,23 @@ input[type=checkbox], input[type=radio] {
     padding: 10px 0;
   }
   .page-footer .footer-font-size {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
-strong, a {
+a {
+  color: #000;
+  transition: all 0.3s;
+}
+a:hover {
   color: rgb(36, 164, 197);
 }
 
 ol.upper-roman {
   list-style-type: upper-roman;
 }
-ol.upper-roman li, ol.upper-roman p {
+ol.upper-roman li,
+ol.upper-roman p {
   padding: 5px 0;
 }
 

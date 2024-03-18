@@ -1,18 +1,23 @@
-strong, a {
+a {
+  color: #000;
+  transition: all 0.3s;
+  &:hover {
     color: $button-color;
+  }
 }
 
 ol.upper-roman {
-    list-style-type: upper-roman;
-    li, p {
-        padding: 5px 0;
-    }
+  list-style-type: upper-roman;
+  li,
+  p {
+    padding: 5px 0;
+  }
 }
 
 ol.lower-latin {
-    list-style-type: lower-latin;
+  list-style-type: lower-latin;
 }
 
 ul {
-    list-style: circle;
+  list-style: circle;
 }
